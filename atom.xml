@@ -6,7 +6,7 @@
   <link href="https://www.lemonawa.xyz/atom.xml" rel="self"/>
   
   <link href="https://www.lemonawa.xyz/"/>
-  <updated>2022-02-12T06:17:11.009Z</updated>
+  <updated>2022-02-12T06:21:36.618Z</updated>
   <id>https://www.lemonawa.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.lemonawa.xyz/2022/01/30/public-cdn/"/>
     <id>https://www.lemonawa.xyz/2022/01/30/public-cdn/</id>
     <published>2022-01-30T12:00:00.000Z</published>
-    <updated>2022-02-12T06:17:11.009Z</updated>
+    <updated>2022-02-12T06:21:36.618Z</updated>
     
     <content type="html"><![CDATA[<p>静态公共CDN，几乎每一位站长都会使用，因为它不仅可以节省服务器的流量，同时还有助于提升访问速度。<br>本文将以内容、速度、宕机率来测评。</p><span id="more"></span><h1 id="1-Jsdelivr"><a href="#1-Jsdelivr" class="headerlink" title="1.Jsdelivr"></a>1.Jsdelivr</h1><p>推荐指数：⭐⭐⭐<br>官网：<a href="https://cdn.jsdelivr.net/">CDN加速站</a> <a href="https://www.jsdelivr.com/">主站</a><br>内容：NPM（无registry），Github，Wordpress<br>速度：国内慢，国外快到离谱（2021年12月20日，他们丢失了ICP许可证，如今走Cloudflare）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Unfortunately today jsDelivr unexpectedly lost its ICP license in China. </span><br><span class="line">As effect the Quantil CDN disabled our account.</span><br><span class="line">From now on all Chinese traffic will be served by &quot;near China&quot; locations </span><br><span class="line">provided by global CDN providers.</span><br></pre></td></tr></table></figure><p>IT狗测速如下：<br><img src="https://s2.loli.net/2022/01/30/LNtWsC1IiGkjcT8.png"></p><h1 id="2-Cdnjs"><a href="#2-Cdnjs" class="headerlink" title="2.Cdnjs"></a>2.Cdnjs</h1><p>推荐指数：⭐⭐⭐<br>官网：<a href="https://cdnjs.cloudflare.com/">CDN加速站</a> <a href="https://cdnjs.com/">主站</a><br>内容：Cdnjs<br>速度：国内慢，国外快到离谱<br>测速：<br><img src="https://s2.loli.net/2022/01/30/LNtWsC1IiGkjcT8.png"><br><del>没错是同一张图，因为都走cloudflare</del></p><h1 id="3-Staticfile"><a href="#3-Staticfile" class="headerlink" title="3.Staticfile"></a>3.Staticfile</h1><p>推荐指数：⭐⭐⭐⭐⭐<br>官网：<a href="https://cdn.staticfile.org/">CDN加速站</a> <a href="https://staticfile.org/">主站</a><br>内容：Cdnjs+国内开发者贡献库<br>速度：快到离谱<br>测速：<br><img src="https://s2.loli.net/2022/01/30/nl9Iir3jFHSE7DL.png"></p><h1 id="4-Bootcdn"><a href="#4-Bootcdn" class="headerlink" title="4.Bootcdn"></a>4.Bootcdn</h1><p>推荐指数：⭐⭐<br>官网：<a href="https://cdn.bootcdn.net/">CDN加速站</a> <a href="https://bootcdn.cn/">主站</a><br>内容：Cdnjs+国内开发者贡献库<br>速度：国内快到离谱，海外慢（国内多节点）<br>测速：<br><img src="https://s2.loli.net/2022/02/02/YyZj3Ego941VfPM.png"></p><h1 id="5-75CDN"><a href="#5-75CDN" class="headerlink" title="5.75CDN"></a>5.75CDN</h1><p>推荐指数：⭐⭐⭐⭐<br>官网：<a href="https://lib.baomitu.com/">CDN加速站</a> <a href="https://cdn.baomitu.com/">主站</a><br>内容：Cdnjs<br>速度：快到离谱<br>测速：<br><img src="https://s2.loli.net/2022/01/30/nl9Iir3jFHSE7DL.png"></p><h1 id="等等，宕机率呢？"><a href="#等等，宕机率呢？" class="headerlink" title="等等，宕机率呢？"></a>等等，宕机率呢？</h1><p>除了Bootcdn，其他好像都不错<br>可以在<a href="https://uptime.lemonawa.xyz/">此处</a>自行查看</p>]]></content>
     
