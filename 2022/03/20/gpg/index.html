@@ -17,7 +17,7 @@
     <meta name="keywords" content="Lemonawa、柠檬awa、互联网、博客、小站">
 
 
-<title>Telegram 人形自走机器人 PagerMaid-Modify安装教程 | Lemonawa&#39;s Blog</title>
+<title>使用GPG密钥验证Github的提交 | Lemonawa&#39;s Blog</title>
 
 
 
@@ -197,7 +197,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Telegram 人形自走机器人 PagerMaid-Modify安装教程</h1>
+            <h1 class="post-title">使用GPG密钥验证Github的提交</h1>
             
                 <div class="post-meta">
                     
@@ -206,7 +206,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">三月 15, 2022&nbsp;&nbsp;0:11:18</a>
+                        Date: <a href="#">三月 20, 2022&nbsp;&nbsp;23:00:29</a>
                         </span>
                     
                     
@@ -215,25 +215,25 @@
         </header>
 
         <div class="post-content">
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在Telegram中，我们有时能看见聊天的人们做出一些神奇的操作：<br><img src="https://s2.loli.net/2022/03/15/Rg7qYTWQCBLNtkj.png"><br>这种操作可以通过使用<code>PagerMaid-Modify</code>来实现  </p>
-<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>（摘自官方repo）  </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Pagermaid 是一个用在 Telegram 的实用工具。  </span><br><span class="line">它通过响应账号通过其他客户端发出的命令来自动执行一系列任务。</span><br></pre></td></tr></table></figure>
-<p>你需要一台位于海外的服务器来完成部署操作</p>
-<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><p>一、用SSH连接工具连接上你的服务器<br>二、运行以下命令：（本次以<code>Ubuntu 20.04 LTS</code>作为示范，其他系统可相应替换）</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install git imagemagick libzbar-dev neofetch tesseract-ocr tesseract-ocr-eng tesseract-ocr-chi-sim redis-server python3-pip -y</span><br><span class="line">git clone https://gitlab.com/Xtao-Labs/pagermaid-modify.git pagermaid &amp;&amp; cd pagermaid</span><br><span class="line">pip3 install -r requirements.txt</span><br><span class="line">cp config.gen.yml config.yml</span><br></pre></td></tr></table></figure>
-<p>三、访问<a target="_blank" rel="noopener" href="https://my.telegram.org/apps">https://my.telegram.org/apps</a>，使用注册Telegram的手机号码登录<br>填写你的应用名称、URL等（可以随便填写），随后单击Create application创建应用<br>有时可能会出现错误提示，请换用美国节点重试<br>完成后复制<code>App api_id</code>和<code>App api_hash</code><br>四、使用<code>vi config.yml</code>命令编辑配置文件，将上面复制的<code>App api_id</code>和<code>App api_hash</code>粘贴进对应位置，注意引号<br>五、运行<code>python3 -m pagermaid</code>，根据提示依次输入手机号、验证码和二次验证密码<br>当看到<code>PagerMaid-Modify 已启动</code>字样时，在任何聊天输入<code>-help</code>测试运行状态<br>不出意外的话，你应该可以看见自己的<code>-help</code>已经被替换成命令列表了<br>此时按下<code>Ctrl+C</code>终止运行<br>六、运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cat &lt;&lt;&#x27;TEXT&#x27; &gt; /etc/systemd/system/pagermaid.service</span><br><span class="line">[Unit]</span><br><span class="line">Description=PagerMaid-Modify telegram utility daemon</span><br><span class="line">After=network.target</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">WorkingDirectory=/root/pagermaid</span><br><span class="line">ExecStart=/usr/bin/python3 -m pagermaid</span><br><span class="line">Restart=always</span><br><span class="line">TEXT</span><br></pre></td></tr></table></figure>
-<p>来设置守护进程  </p>
+            <p>在Github浏览Commits时，我们应该经常可以看见一个绿色标记：Verified(已验证)<br><img src="https://s2.loli.net/2022/03/20/DKI6FoaHrk8EYUv.png"><br>那么，如何拥有这样的标记呢？</p>
+<h3 id="GPG简介"><a href="#GPG简介" class="headerlink" title="GPG简介"></a>GPG简介</h3><p>（摘自维基百科）</p>
 <blockquote>
-<p><code>WorkingDirectory</code>请按自己实际环境配置，一般应为<code>/root/pagermaid</code>   </p>
+<p>GNU Privacy Guard（GnuPG或GPG）是一个密码学软件，用于加密、签名通信内容及管理非对称密码学的密钥。GnuPG是自由软件，遵循IETF订定的OpenPGP技术标准设计，并与PGP保持兼容。</p>
 </blockquote>
-<p>此时运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start pagermaid</span><br></pre></td></tr></table></figure>
-<p>来启动程序，运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status pagermaid</span><br></pre></td></tr></table></figure>
-<p>来检查运行状态，检查完成按<code>q</code>退出界面<br>再运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable pagermaid</span><br></pre></td></tr></table></figure>
-<p>来设置为开机自启<br>现在，你可以在聊天中使用<code>-help</code>获取使用帮助了<br>安装过程结束</p>
+<p>简单的说，就是用于加密的密钥。<br>众所周知，Git的提交只需要自己的邮箱和密码，这就出现了一个漏洞：<br>只要他人有你的用户名和邮箱，就可以进行提交，就可以更改你的仓库内容。<br>一个典型的案例：<a target="_blank" rel="noopener" href="https://spencerwoo.com/blog/wait-this-is-not-my-commit">https://spencerwoo.com/blog/wait-this-is-not-my-commit</a></p>
+<h3 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h3><ol>
+<li>电脑上安装好Git<br>没有安装的可以在此处下载：<a target="_blank" rel="noopener" href="https://repo.huaweicloud.com/git-for-windows/">https://repo.huaweicloud.com/git-for-windows/</a></li>
+<li>打开Git Bash，输入<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gpg --full-generate-key</span><br></pre></td></tr></table></figure>
+在第一处，选择RSA<br>在第二处，选择4096bits<br>在第三处，选择过期时间，回车为永不过期<br>在用户ID处，填写自己的Github用户名<br>在签名邮箱处，填写Github上绑定的邮箱<br>最后，为密钥设置一个密码，也可以不设置，如果设置了则一定要记住这个密码<br>这样，就成功生成了一对GPG密钥  </li>
+<li>运行<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gpg --list-secret-keys --keyid-format LONG</span><br></pre></td></tr></table></figure>
+来查看我们当前拥有的所有GPG密钥：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Lemonawa@Inspiron-3670 MINGW64 ~/hexo</span><br><span class="line">$ gpg --list-secret-keys --keyid-format LONG</span><br><span class="line">/c/Users/Lemonawa/.gnupg/pubring.kbx</span><br><span class="line">------------------------------------</span><br><span class="line">sec   rsa3072/FB8FA623E7013D41 2022-03-17 [SC]</span><br><span class="line">      0722D31772F81E20A945BDD0FB8FA623E7013D41</span><br><span class="line">uid                 [ultimate] Lemonawa &lt;lemonawa1209@gmail.com&gt;</span><br><span class="line">ssb   rsa3072/34F49A369E312009 2022-03-17 [E]</span><br></pre></td></tr></table></figure>
+其中，sec一行的<code>FB8FA623E7013D41</code>即为GPG私钥ID</li>
+<li>运行<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.signingkey FB8FA623E7013D41(此处替换为你自己的私钥ID)</span><br><span class="line">$ git config --global commit.gpgsign true</span><br></pre></td></tr></table></figure>
+此后的每一次提交，Git都会用其进行签名</li>
+<li>运行<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gpg --armor --export FB8FA623E7013D41</span><br></pre></td></tr></table></figure>
+来导出自己的GPG公钥，类似这样：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-----BEGIN PGP PUBLIC KEY BLOCK-----</span><br><span class="line">dasSJDsiiiaF......</span><br><span class="line">-----END PGP PUBLIC KEY BLOCK-----</span><br></pre></td></tr></table></figure>
+将这一段粘贴到<a target="_blank" rel="noopener" href="https://github.com/settings/keys">https://github.com/settings/keys</a> 的GPG keys处，随后进行一次提交，即可看见自己的commit上有了Verified的绿色标签<h3 id="End"><a href="#End" class="headerlink" title="End."></a>End.</h3></li>
+</ol>
 
         </div>
 
@@ -248,7 +248,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://www.lemonawa.xyz/2022/03/15/pgm/">https://www.lemonawa.xyz/2022/03/15/pgm/</a></span>
+                        <span><a href="https://www.lemonawa.xyz/2022/03/20/gpg/">https://www.lemonawa.xyz/2022/03/20/gpg/</a></span>
                     </p>
                 
                 
@@ -269,7 +269,11 @@
                     
                         <a href="/tags/%E6%95%99%E7%A8%8B/"># 教程</a>
                     
-                        <a href="/tags/Telegram/"># Telegram</a>
+                        <a href="/tags/Github/"># Github</a>
+                    
+                        <a href="/tags/%E5%AF%86%E9%92%A5/"># 密钥</a>
+                    
+                        <a href="/tags/GPG/"># GPG</a>
                     
                         
                 </span>
@@ -282,10 +286,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2022/03/20/gpg/">使用GPG密钥验证Github的提交</a>
             
-            
-            <a class="next" rel="next" href="/2022/01/30/public-cdn/">常用静态公共CDN评测</a>
+            <a class="next" rel="next" href="/2022/03/15/pgm/">Telegram 人形自走机器人 PagerMaid-Modify安装教程</a>
             
         </section>
 
