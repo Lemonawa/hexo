@@ -17,7 +17,7 @@
     <meta name="keywords" content="Lemonawa、柠檬awa、互联网、博客、小站">
 
 
-<title>现已开放友链申请 | Lemonawa&#39;s Blog</title>
+<title>为Hexo添加RSS订阅页面和站点地图 | Lemonawa&#39;s Blog</title>
 
 
 
@@ -132,11 +132,73 @@
                 <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">现已开放友链申请</h1>
+            <h1 class="post-title">为Hexo添加RSS订阅页面和站点地图</h1>
             
                 <div class="post-meta">
                     
@@ -145,7 +207,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">三月 21, 2022&nbsp;&nbsp;0:07:34</a>
+                        Date: <a href="#">三月 21, 2022&nbsp;&nbsp;1:17:52</a>
                         </span>
                     
                     
@@ -154,7 +216,18 @@
         </header>
 
         <div class="post-content">
-            <p>访问：<a target="_blank" rel="noopener" href="https://lemonawa.xyz/links">https://lemonawa.xyz/links</a> 获取更多信息</p>
+            <h3 id="RSS订阅插件安装"><a href="#RSS订阅插件安装" class="headerlink" title="RSS订阅插件安装"></a>RSS订阅插件安装</h3><p>打开hexo所在目录的命令行，输入以下命令安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<p>如果你有安装<code>yarn</code>的话，建议使用<code>yarn</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-feed</span><br></pre></td></tr></table></figure>
+<p>然后在<code>_config.yml</code>中添加此项：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rss： /atom.xml</span><br></pre></td></tr></table></figure>
+<p>最终RSS文件<code>atom.xml</code>会在<code>https://example.com/atom.xml</code>处生成</p>
+<h3 id="站点地图插件安装"><a href="#站点地图插件安装" class="headerlink" title="站点地图插件安装"></a>站点地图插件安装</h3><p>打开hexo所在目录的命令行，输入以下命令安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>如果你有安装<code>yarn</code>的话，建议使用<code>yarn</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-sitemap</span><br></pre></td></tr></table></figure>
+<p>最终站点地图文件<code>sitemap.xml</code>会在<code>https://example.com/sitemap.xml</code>处生成</p>
 
         </div>
 
@@ -169,7 +242,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://www.lemonawa.xyz/2022/03/21/links/">https://www.lemonawa.xyz/2022/03/21/links/</a></span>
+                        <span><a href="https://www.lemonawa.xyz/2022/03/21/sitemapandrss/">https://www.lemonawa.xyz/2022/03/21/sitemapandrss/</a></span>
                     </p>
                 
                 
@@ -188,9 +261,13 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/%E5%8F%8B%E9%93%BE/"># 友链</a>
+                        <a href="/tags/%E6%95%99%E7%A8%8B/"># 教程</a>
                     
-                        <a href="/tags/Links/"># Links</a>
+                        <a href="/tags/RSS/"># RSS</a>
+                    
+                        <a href="/tags/Sitemap/"># Sitemap</a>
+                    
+                        <a href="/tags/%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/"># 站点地图</a>
                     
                         
                 </span>
@@ -203,10 +280,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2022/03/21/windterm/">Windterm：用于DevOps的一个更快更好的SSH/Telnet/Serial/Shell/Sftp客户端.</a>
             
-            
-            <a class="next" rel="next" href="/2022/03/20/gpg/">使用GPG密钥验证Github的提交</a>
+            <a class="next" rel="next" href="/2022/03/21/windterm/">Windterm：用于DevOps的一个更快更好的SSH/Telnet/Serial/Shell/Sftp客户端.</a>
             
         </section>
 
