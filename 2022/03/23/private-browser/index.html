@@ -17,7 +17,7 @@
     <meta name="keywords" content="Lemonawa、柠檬awa、互联网、博客、小站">
 
 
-<title>Telegram 人形自走机器人 PagerMaid-Modify安装教程 | Lemonawa&#39;s Blog</title>
+<title>如何在浏览器中保护自己的隐私？ | Lemonawa&#39;s Blog</title>
 
 
 
@@ -198,7 +198,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Telegram 人形自走机器人 PagerMaid-Modify安装教程</h1>
+            <h1 class="post-title">如何在浏览器中保护自己的隐私？</h1>
             
                 <div class="post-meta">
                     
@@ -207,7 +207,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">三月 15, 2022&nbsp;&nbsp;0:11:18</a>
+                        Date: <a href="#">三月 23, 2022&nbsp;&nbsp;23:32:05</a>
                         </span>
                     
                     
@@ -216,25 +216,18 @@
         </header>
 
         <div class="post-content">
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在Telegram中，我们有时能看见聊天的人们做出一些神奇的操作：<br><img src="https://s2.loli.net/2022/03/15/Rg7qYTWQCBLNtkj.png"><br>这种操作可以通过使用<code>PagerMaid-Modify</code>来实现  </p>
-<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>（摘自官方repo）  </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Pagermaid 是一个用在 Telegram 的实用工具。  </span><br><span class="line">它通过响应账号通过其他客户端发出的命令来自动执行一系列任务。</span><br></pre></td></tr></table></figure>
-<p>你需要一台位于海外的服务器来完成部署操作</p>
-<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><p>一、用SSH连接工具连接上你的服务器<br>二、运行以下命令：（本次以<code>Ubuntu 20.04 LTS</code>作为示范，其他系统可相应替换）</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install git imagemagick libzbar-dev neofetch tesseract-ocr tesseract-ocr-eng tesseract-ocr-chi-sim redis-server python3-pip -y</span><br><span class="line">git clone https://gitlab.com/Xtao-Labs/pagermaid-modify.git pagermaid &amp;&amp; cd pagermaid</span><br><span class="line">pip3 install -r requirements.txt</span><br><span class="line">cp config.gen.yml config.yml</span><br></pre></td></tr></table></figure>
-<p>三、访问<a target="_blank" rel="noopener" href="https://my.telegram.org/apps">https://my.telegram.org/apps</a>，使用注册Telegram的手机号码登录<br>填写你的应用名称、URL等（可以随便填写），随后单击Create application创建应用<br>有时可能会出现错误提示，请换用美国节点重试<br>完成后复制<code>App api_id</code>和<code>App api_hash</code><br>四、使用<code>vi config.yml</code>命令编辑配置文件，将上面复制的<code>App api_id</code>和<code>App api_hash</code>粘贴进对应位置，注意引号<br>五、运行<code>python3 -m pagermaid</code>，根据提示依次输入手机号、验证码和二次验证密码<br>当看到<code>PagerMaid-Modify 已启动</code>字样时，在任何聊天输入<code>-help</code>测试运行状态<br>不出意外的话，你应该可以看见自己的<code>-help</code>已经被替换成命令列表了<br>此时按下<code>Ctrl+C</code>终止运行<br>六、运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cat &lt;&lt;&#x27;TEXT&#x27; &gt; /etc/systemd/system/pagermaid.service</span><br><span class="line">[Unit]</span><br><span class="line">Description=PagerMaid-Modify telegram utility daemon</span><br><span class="line">After=network.target</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">WorkingDirectory=/root/pagermaid</span><br><span class="line">ExecStart=/usr/bin/python3 -m pagermaid</span><br><span class="line">Restart=always</span><br><span class="line">TEXT</span><br></pre></td></tr></table></figure>
-<p>来设置守护进程  </p>
-<blockquote>
-<p><code>WorkingDirectory</code>请按自己实际环境配置，一般应为<code>/root/pagermaid</code>   </p>
-</blockquote>
-<p>此时运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start pagermaid</span><br></pre></td></tr></table></figure>
-<p>来启动程序，运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status pagermaid</span><br></pre></td></tr></table></figure>
-<p>来检查运行状态，检查完成按<code>q</code>退出界面<br>再运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable pagermaid</span><br></pre></td></tr></table></figure>
-<p>来设置为开机自启<br>现在，你可以在聊天中使用<code>-help</code>获取使用帮助了<br>安装过程结束</p>
+            <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>如今，越来越多的企业为了谋取自己的利益，大肆利用算法推荐，获取分析个人数据用于建造自己的商业帝国<br>保护隐私显得尤为重要。<br>本文将分享我的浏览器隐私保护策略，如有更好的可以向我提出</p>
+<h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><p>我选择的是Brave.<br>开源、免费、Chrome内核、隐私保护到指纹<br><img src="https://s2.loli.net/2022/03/23/D92iowLH1BEaFSU.png"><br>下载地址：<a target="_blank" rel="noopener" href="https://brave.com/">https://brave.com</a> (需掌握一定的上网技巧)或者 <a target="_blank" rel="noopener" href="https://github.com/brave/brave-browser/releases">https://github.com/brave/brave-browser/releases</a></p>
+<h3 id="浏览器插件"><a href="#浏览器插件" class="headerlink" title="浏览器插件"></a>浏览器插件</h3><ol>
+<li>Brave 自带屏蔽<br>防广告垃圾，但是防指纹等还是不错的  </li>
+<li>uBlock Origin<br>我一般将其拿来屏蔽广告和一些我不愿意看到的网站，建议搭配其他规则使用  </li>
+<li>隐私獾<br>EFF开发，自动学习屏蔽追踪器，防指纹识别  </li>
+<li>Random User-Agent<br>自动随机用户代理，不会造成不兼容问题  </li>
+<li>Bitwarden<br>管理密码，我是按照源码自己搭建了一个</li>
+</ol>
+<ul>
+<li>所有这些插件均可在谷歌应用商店下载，访问不顺的可以通过 <a target="_blank" rel="noopener" href="https://www.crxsoso.com/">https://www.crxsoso.com/</a> 来安装</li>
+</ul>
 
         </div>
 
@@ -249,7 +242,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://www.lemonawa.xyz/2022/03/15/pgm/">https://www.lemonawa.xyz/2022/03/15/pgm/</a></span>
+                        <span><a href="https://www.lemonawa.xyz/2022/03/23/private-browser/">https://www.lemonawa.xyz/2022/03/23/private-browser/</a></span>
                     </p>
                 
                 
@@ -268,9 +261,9 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/%E6%95%99%E7%A8%8B/"># 教程</a>
+                        <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"># 浏览器</a>
                     
-                        <a href="/tags/Telegram/"># Telegram</a>
+                        <a href="/tags/%E9%9A%90%E7%A7%81/"># 隐私</a>
                     
                         
                 </span>
@@ -283,10 +276,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2022/03/20/gpg/">使用GPG密钥验证Github的提交</a>
             
-            
-            <a class="next" rel="next" href="/2022/01/30/public-cdn/">常用静态公共CDN评测</a>
+            <a class="next" rel="next" href="/2022/03/21/dns/">各大厂商公共DNS大全【持续更新】</a>
             
         </section>
 

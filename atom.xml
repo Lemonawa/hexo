@@ -6,7 +6,7 @@
   <link href="https://www.lemonawa.xyz/atom.xml" rel="self"/>
   
   <link href="https://www.lemonawa.xyz/"/>
-  <updated>2022-03-22T15:47:14.577Z</updated>
+  <updated>2022-03-23T16:01:19.347Z</updated>
   <id>https://www.lemonawa.xyz/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在浏览器中保护自己的隐私？</title>
+    <link href="https://www.lemonawa.xyz/2022/03/23/private-browser/"/>
+    <id>https://www.lemonawa.xyz/2022/03/23/private-browser/</id>
+    <published>2022-03-23T15:32:05.000Z</published>
+    <updated>2022-03-23T16:01:19.347Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>如今，越来越多的企业为了谋取自己的利益，大肆利用算法推荐，获取分析个人数据用于建造自己的商业帝国<br>保护隐私显得尤为重要。<br>本文将分享我的浏览器隐私保护策略，如有更好的可以向我提出</p><h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><p>我选择的是Brave.<br>开源、免费、Chrome内核、隐私保护到指纹<br><img src="https://s2.loli.net/2022/03/23/D92iowLH1BEaFSU.png"><br>下载地址：<a href="https://brave.com/">https://brave.com</a> (需掌握一定的上网技巧)或者 <a href="https://github.com/brave/brave-browser/releases">https://github.com/brave/brave-browser/releases</a></p><h3 id="浏览器插件"><a href="#浏览器插件" class="headerlink" title="浏览器插件"></a>浏览器插件</h3><ol><li>Brave 自带屏蔽<br>防广告垃圾，但是防指纹等还是不错的  </li><li>uBlock Origin<br>我一般将其拿来屏蔽广告和一些我不愿意看到的网站，建议搭配其他规则使用  </li><li>隐私獾<br>EFF开发，自动学习屏蔽追踪器，防指纹识别  </li><li>Random User-Agent<br>自动随机用户代理，不会造成不兼容问题  </li><li>Bitwarden<br>管理密码，我是按照源码自己搭建了一个</li></ol><ul><li>所有这些插件均可在谷歌应用商店下载，访问不顺的可以通过 <a href="https://www.crxsoso.com/">https://www.crxsoso.com/</a> 来安装</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;如今，越来越多的企业为了谋取自己的利益，大肆利用算法推荐，获取分析个人数据用于建造自己的商业帝国&lt;br&gt;保护隐私显得尤为重要。&lt;br&gt;本文将</summary>
+      
+    
+    
+    
+    
+    <category term="浏览器" scheme="https://www.lemonawa.xyz/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    <category term="隐私" scheme="https://www.lemonawa.xyz/tags/%E9%9A%90%E7%A7%81/"/>
+    
+  </entry>
   
   <entry>
     <title>各大厂商公共DNS大全【持续更新】</title>
@@ -175,9 +199,9 @@
     
     
     
-    <category term="Telegram" scheme="https://www.lemonawa.xyz/tags/Telegram/"/>
-    
     <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Telegram" scheme="https://www.lemonawa.xyz/tags/Telegram/"/>
     
   </entry>
   
