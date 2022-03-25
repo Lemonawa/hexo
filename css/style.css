@@ -462,24 +462,6 @@ input[type="radio"]:not(:checked) + label:after {
 }
 
 
-@font-face {
-  font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1648133717444') format('truetype');
-}
-
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-telegram-plane:before {
-  content: "\ec25";
-}
-
-
 .header-logo a {
   padding: 0;
 }
