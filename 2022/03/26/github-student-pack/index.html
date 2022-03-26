@@ -17,7 +17,7 @@
     <meta name="keywords" content="Lemonawa、柠檬awa、互联网、博客、小站">
 
 
-<title>Telegram 人形自走机器人 PagerMaid-Modify安装教程 | Lemonawa&#39;s Blog</title>
+<title>GitHub Student Developer Pack 的申请教程 | Lemonawa&#39;s Blog</title>
 
 
 
@@ -198,7 +198,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Telegram 人形自走机器人 PagerMaid-Modify安装教程</h1>
+            <h1 class="post-title">GitHub Student Developer Pack 的申请教程</h1>
             
                 <div class="post-meta">
                     
@@ -207,34 +207,51 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">三月 15, 2022&nbsp;&nbsp;0:11:18</a>
+                        Date: <a href="#">三月 26, 2022&nbsp;&nbsp;0:34:56</a>
                         </span>
                     
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+                            
+                                <a href="/categories/%E6%95%99%E7%A8%8B/Github/">Github</a>
+                            
+                        </span>
                     
                 </div>
             
         </header>
 
         <div class="post-content">
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在Telegram中，我们有时能看见聊天的人们做出一些神奇的操作：<br><img src="https://s2.loli.net/2022/03/15/Rg7qYTWQCBLNtkj.png"><br>这种操作可以通过使用<code>PagerMaid-Modify</code>来实现  </p>
-<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>（摘自官方repo）  </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Pagermaid 是一个用在 Telegram 的实用工具。  </span><br><span class="line">它通过响应账号通过其他客户端发出的命令来自动执行一系列任务。</span><br></pre></td></tr></table></figure>
-<p>你需要一台位于海外的服务器来完成部署操作</p>
-<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><p>一、用SSH连接工具连接上你的服务器<br>二、运行以下命令：（本次以<code>Ubuntu 20.04 LTS</code>作为示范，其他系统可相应替换）</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install git imagemagick libzbar-dev neofetch tesseract-ocr tesseract-ocr-eng tesseract-ocr-chi-sim redis-server python3-pip -y</span><br><span class="line">git clone https://gitlab.com/Xtao-Labs/pagermaid-modify.git pagermaid &amp;&amp; cd pagermaid</span><br><span class="line">pip3 install -r requirements.txt</span><br><span class="line">cp config.gen.yml config.yml</span><br></pre></td></tr></table></figure>
-<p>三、访问<a target="_blank" rel="noopener" href="https://my.telegram.org/apps">https://my.telegram.org/apps</a>，使用注册Telegram的手机号码登录<br>填写你的应用名称、URL等（可以随便填写），随后单击Create application创建应用<br>有时可能会出现错误提示，请换用美国节点重试<br>完成后复制<code>App api_id</code>和<code>App api_hash</code><br>四、使用<code>vi config.yml</code>命令编辑配置文件，将上面复制的<code>App api_id</code>和<code>App api_hash</code>粘贴进对应位置，注意引号<br>五、运行<code>python3 -m pagermaid</code>，根据提示依次输入手机号、验证码和二次验证密码<br>当看到<code>PagerMaid-Modify 已启动</code>字样时，在任何聊天输入<code>-help</code>测试运行状态<br>不出意外的话，你应该可以看见自己的<code>-help</code>已经被替换成命令列表了<br>此时按下<code>Ctrl+C</code>终止运行<br>六、运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cat &lt;&lt;&#x27;TEXT&#x27; &gt; /etc/systemd/system/pagermaid.service</span><br><span class="line">[Unit]</span><br><span class="line">Description=PagerMaid-Modify telegram utility daemon</span><br><span class="line">After=network.target</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">WorkingDirectory=/root/pagermaid</span><br><span class="line">ExecStart=/usr/bin/python3 -m pagermaid</span><br><span class="line">Restart=always</span><br><span class="line">TEXT</span><br></pre></td></tr></table></figure>
-<p>来设置守护进程  </p>
-<blockquote>
-<p><code>WorkingDirectory</code>请按自己实际环境配置，一般应为<code>/root/pagermaid</code>   </p>
+            <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote>
+<p>Learn to ship software like a pro. There’s no substitute for hands-on experience. But for most students, real world tools can be cost-prohibitive. That’s why we created the GitHub Student Developer Pack with some of our partners and friends.</p>
 </blockquote>
-<p>此时运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start pagermaid</span><br></pre></td></tr></table></figure>
-<p>来启动程序，运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status pagermaid</span><br></pre></td></tr></table></figure>
-<p>来检查运行状态，检查完成按<code>q</code>退出界面<br>再运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable pagermaid</span><br></pre></td></tr></table></figure>
-<p>来设置为开机自启<br>现在，你可以在聊天中使用<code>-help</code>获取使用帮助了<br>安装过程结束</p>
+<p>其实也就是Github提供给学生的福利啦  </p>
+<h3 id="申请要求"><a href="#申请要求" class="headerlink" title="申请要求"></a>申请要求</h3><ul>
+<li><p>目前就读于授予学位或文凭的学习课程，例如高中、中学、学院、大学、家庭学校或类似的教育机构。</p>
+</li>
+<li><p>拥有一个可验证的学校颁发的电子邮件地址或上传证明您当前学生身份的文件。</p>
+</li>
+<li><p>拥有 GitHub 用户帐户。</p>
+</li>
+<li><p>至少 13 岁。</p>
+<h3 id="避坑点"><a href="#避坑点" class="headerlink" title="避坑点"></a>避坑点</h3></li>
+<li><p>建议使用学生证之类的<strong>实体证件</strong>，邮箱大多被BAN</p>
+</li>
+<li><p>提交的文件要求有<strong>有效期</strong>，有毕业年月就好，没有也可以自己P一个上去</p>
+</li>
+<li><p>如果自己在学校附近就<strong>不要使用代理服务器&#x2F;VPN等</strong>，Github会识别IP地址所在城市与学校位置</p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3></li>
+<li><p>打开 <a target="_blank" rel="noopener" href="https://education.github.com/discount_requests/student_application">https://education.github.com/discount_requests/student_application</a></p>
+</li>
+<li><p>填写&#x2F;上传个人及学校信息</p>
+</li>
+<li><p>等10天<br>如果幸运的话，就会像我一样收到这样的邮件：<br><img src="https://s2.loli.net/2022/03/26/qMLecSEWX7HRzTh.png"><br>否则就要再次申请</p>
+<h3 id="全部福利"><a href="#全部福利" class="headerlink" title="全部福利"></a>全部福利</h3><p><a target="_blank" rel="noopener" href="https://education.github.com/pack">https://education.github.com/pack</a><br>都在这了，自己看吧  </p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1></li>
+</ul>
 
         </div>
 
@@ -249,7 +266,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://www.lemonawa.xyz/2022/03/15/pgm/">https://www.lemonawa.xyz/2022/03/15/pgm/</a></span>
+                        <span><a href="https://www.lemonawa.xyz/2022/03/26/github-student-pack/">https://www.lemonawa.xyz/2022/03/26/github-student-pack/</a></span>
                     </p>
                 
                 
@@ -270,7 +287,11 @@
                     
                         <a href="/tags/%E6%95%99%E7%A8%8B/"># 教程</a>
                     
-                        <a href="/tags/Telegram/"># Telegram</a>
+                        <a href="/tags/Github/"># Github</a>
+                    
+                        <a href="/tags/Pack/"># Pack</a>
+                    
+                        <a href="/tags/%E7%BE%8A%E6%AF%9B/"># 羊毛</a>
                     
                         
                 </span>
@@ -283,10 +304,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2022/03/20/gpg/">使用GPG密钥验证Github的提交</a>
             
-            
-            <a class="next" rel="next" href="/2022/01/30/public-cdn/">常用静态公共CDN评测</a>
+            <a class="next" rel="next" href="/2022/03/23/private-browser/">如何在浏览器中保护自己的隐私？</a>
             
         </section>
 

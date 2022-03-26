@@ -6,7 +6,7 @@
   <link href="https://www.lemonawa.xyz/atom.xml" rel="self"/>
   
   <link href="https://www.lemonawa.xyz/"/>
-  <updated>2022-03-23T16:01:19.347Z</updated>
+  <updated>2022-03-26T16:23:07.114Z</updated>
   <id>https://www.lemonawa.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHub Student Developer Pack 的申请教程</title>
+    <link href="https://www.lemonawa.xyz/2022/03/26/github-student-pack/"/>
+    <id>https://www.lemonawa.xyz/2022/03/26/github-student-pack/</id>
+    <published>2022-03-25T16:34:56.000Z</published>
+    <updated>2022-03-26T16:23:07.114Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote><p>Learn to ship software like a pro. There’s no substitute for hands-on experience. But for most students, real world tools can be cost-prohibitive. That’s why we created the GitHub Student Developer Pack with some of our partners and friends.</p></blockquote><p>其实也就是Github提供给学生的福利啦  </p><h3 id="申请要求"><a href="#申请要求" class="headerlink" title="申请要求"></a>申请要求</h3><ul><li><p>目前就读于授予学位或文凭的学习课程，例如高中、中学、学院、大学、家庭学校或类似的教育机构。</p></li><li><p>拥有一个可验证的学校颁发的电子邮件地址或上传证明您当前学生身份的文件。</p></li><li><p>拥有 GitHub 用户帐户。</p></li><li><p>至少 13 岁。</p><h3 id="避坑点"><a href="#避坑点" class="headerlink" title="避坑点"></a>避坑点</h3></li><li><p>建议使用学生证之类的<strong>实体证件</strong>，邮箱大多被BAN</p></li><li><p>提交的文件要求有<strong>有效期</strong>，有毕业年月就好，没有也可以自己P一个上去</p></li><li><p>如果自己在学校附近就<strong>不要使用代理服务器&#x2F;VPN等</strong>，Github会识别IP地址所在城市与学校位置</p><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3></li><li><p>打开 <a href="https://education.github.com/discount_requests/student_application">https://education.github.com/discount_requests/student_application</a></p></li><li><p>填写&#x2F;上传个人及学校信息</p></li><li><p>等10天<br>如果幸运的话，就会像我一样收到这样的邮件：<br><img src="https://s2.loli.net/2022/03/26/qMLecSEWX7HRzTh.png"><br>否则就要再次申请</p><h3 id="全部福利"><a href="#全部福利" class="headerlink" title="全部福利"></a>全部福利</h3><p><a href="https://education.github.com/pack">https://education.github.com/pack</a><br>都在这了，自己看吧  </p><h1 id=""><a href="#" class="headerlink" title=""></a></h1></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Learn to ship software like a pro. There’s no substitute </summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Github" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/Github/"/>
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Github" scheme="https://www.lemonawa.xyz/tags/Github/"/>
+    
+    <category term="Pack" scheme="https://www.lemonawa.xyz/tags/Pack/"/>
+    
+    <category term="羊毛" scheme="https://www.lemonawa.xyz/tags/%E7%BE%8A%E6%AF%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>如何在浏览器中保护自己的隐私？</title>
@@ -199,9 +232,9 @@
     
     
     
-    <category term="Telegram" scheme="https://www.lemonawa.xyz/tags/Telegram/"/>
-    
     <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Telegram" scheme="https://www.lemonawa.xyz/tags/Telegram/"/>
     
   </entry>
   
