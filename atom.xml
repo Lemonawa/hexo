@@ -6,7 +6,7 @@
   <link href="https://www.lemonawa.xyz/atom.xml" rel="self"/>
   
   <link href="https://www.lemonawa.xyz/"/>
-  <updated>2022-03-26T15:14:26.859Z</updated>
+  <updated>2022-03-23T16:01:19.347Z</updated>
   <id>https://www.lemonawa.xyz/</id>
   
   <author>
@@ -15,39 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>GitHub Student Developer Pack 的申请教程</title>
-    <link href="https://www.lemonawa.xyz/2022/03/26/github-student-pack/"/>
-    <id>https://www.lemonawa.xyz/2022/03/26/github-student-pack/</id>
-    <published>2022-03-25T16:34:56.000Z</published>
-    <updated>2022-03-26T15:14:26.859Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote><p>Learn to ship software like a pro. There’s no substitute for hands-on experience. But for most students, real world tools can be cost-prohibitive. That’s why we created the GitHub Student Developer Pack with some of our partners and friends.</p></blockquote><p>其实也就是Github提供给学生的福利啦  </p><h3 id="申请要求"><a href="#申请要求" class="headerlink" title="申请要求"></a>申请要求</h3><ul><li>目前就读于授予学位或文凭的学习课程，例如高中、中学、学院、大学、家庭学校或类似的教育机构。</li><li>拥有一个可验证的学校颁发的电子邮件地址或上传证明您当前学生身份的文件。</li><li>拥有 GitHub 用户帐户。</li><li>至少 13 岁。<h3 id="避坑点"><a href="#避坑点" class="headerlink" title="避坑点"></a>避坑点</h3></li><li>建议使用学生证之类的<strong>实体证件</strong>，邮箱大多被BAN</li><li>提交的文件要求有<strong>有效期</strong>，有毕业年月就好，没有也可以自己P一个上去</li><li>如果自己在学校附近就<strong>不要使用代理服务器&#x2F;VPN等</strong>，Github会识别IP地址所在城市与学校位置<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3></li><li>打开 <a href="https://education.github.com/discount_requests/student_application">https://education.github.com/discount_requests/student_application</a></li><li>填写&#x2F;上传个人及学校信息</li><li>等10天<br>如果幸运的话，就会像我一样收到这样的邮件：<br><img src="https://s2.loli.net/2022/03/26/qMLecSEWX7HRzTh.png"><br>否则就要再次申请<h3 id="全部福利"><a href="#全部福利" class="headerlink" title="全部福利"></a>全部福利</h3><a href="https://education.github.com/pack">https://education.github.com/pack</a><br>都在这了，自己看吧<br>其中主要 Azure 和 JetBrains 比较爽</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Learn to ship software like a pro. There’s no substitute </summary>
-      
-    
-    
-    
-    <category term="教程" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Github" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/Github/"/>
-    
-    
-    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Github" scheme="https://www.lemonawa.xyz/tags/Github/"/>
-    
-    <category term="Pack" scheme="https://www.lemonawa.xyz/tags/Pack/"/>
-    
-    <category term="羊毛" scheme="https://www.lemonawa.xyz/tags/%E7%BE%8A%E6%AF%9B/"/>
-    
-  </entry>
   
   <entry>
     <title>如何在浏览器中保护自己的隐私？</title>
@@ -78,9 +45,9 @@
     <link href="https://www.lemonawa.xyz/2022/03/21/dns/"/>
     <id>https://www.lemonawa.xyz/2022/03/21/dns/</id>
     <published>2022-03-21T15:26:11.000Z</published>
-    <updated>2022-03-22T15:47:14.577Z</updated>
+    <updated>2022-03-26T16:15:47.527Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>(摘抄自维基百科)</p><blockquote><p>域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。</p></blockquote><h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><p>此处仅展示<strong>广义上</strong>的概念，部分(如Cloudflare)有特殊解释的将会在后面说明<br>DoH: DNS over HTTPS (基于HTTPS的DNS)<br>DoT: DNS over TLS (基于TLS的DNS)<br>DNS64: 一种在不存在 AAAA 记录时从 A 记录合成 AAAA 记录的机制，用于支持纯IPv6网络</p><h3 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h3><h4 id="大陆"><a href="#大陆" class="headerlink" title="大陆"></a>大陆</h4><h5 id="Dnspod"><a href="#Dnspod" class="headerlink" title="Dnspod"></a>Dnspod</h5><p>Dnspod目前为腾讯所有，海内外的连通性都不错<br>IPv4: <code>119.29.29.29</code><br>IPv6: <code>2402:4e00::</code><br>DoH: <code>https://doh.pub/dns-query</code><br>DoH(IP): <code>https://1.12.12.12/dns-query</code>, <code>https://120.53.53.53/dns-query</code><br>DoH(国密SM2): <code>https://sm2.doh.pub/dns-query</code><br>DoT: <code>dot.pub</code><br>DoT(IP): <code>1.12.12.12</code>, <code>120.53.53.53</code>  </p><h5 id="Alidns"><a href="#Alidns" class="headerlink" title="Alidns"></a>Alidns</h5><p>阿里巴巴提供的DNS服务，国内连通性好，国外连通性差<br>IPv4: <code>223.5.5.5</code>, <code>223.6.6.6</code><br>IPv6: <code>2400:3200::1</code>, <code>2400:3200:baba::1</code><br>DoH: <code>https://dns.alidns.com/dns-query</code><br>DoT: <code>dns.alidns.com</code></p><h5 id="114DNS"><a href="#114DNS" class="headerlink" title="114DNS"></a>114DNS</h5><p>老牌，国外一般<br>IPv4: <code>114.114.114.114</code>, <code>114.114.115.115</code></p><h5 id="CNNIC-DNS"><a href="#CNNIC-DNS" class="headerlink" title="CNNIC DNS"></a>CNNIC DNS</h5><p>中国互联网信息中心提供，国外连通性差<br>IPv4: <code>1.2.4.8</code>, <code>210.2.4.8</code><br>IPv6: <code>2001:dc7:1000::1</code></p><h5 id="Baidu-DNS"><a href="#Baidu-DNS" class="headerlink" title="Baidu DNS"></a>Baidu DNS</h5><p>百度提供，海外一般<br>IPv4: <code>180.76.76.76</code><br>IPv6: <code>2400:da00::6666</code></p><h5 id="360-DNS"><a href="#360-DNS" class="headerlink" title="360 DNS"></a>360 DNS</h5><p>国内单节点<br>IPv4(电信+铁通+移动): <code>101.226.4.6</code>, <code>218.30.118.6</code><br>IPv4(联通): <code>123.125.81.6</code>, <code>140.207.198.6</code><br>DoH: <code>https://doh.360.cn</code><br>DoT: <code>dot.360.cn</code></p><h4 id="海外"><a href="#海外" class="headerlink" title="海外"></a>海外</h4><p><strong>此处列出的DoT服务大部分无法使用</strong></p><h5 id="Google-Public-DNS"><a href="#Google-Public-DNS" class="headerlink" title="Google Public DNS"></a>Google Public DNS</h5><p>老牌，国内连通性还可以，国外连通性极好<br>IPv4: <code>8.8.8.8</code>, <code>8.8.4.4</code><br>IPv6: <code>2001:4860:4860::8888</code>, <code>2001:4860:4860::8844</code><br>DoH: <code>https://dns.google/dns-query</code><br>DoT: <code>dns.google</code><br>DNS64: <code>2001:4860:4860::6464</code>, <code>2001:4860:4860::64</code><br>DoH(DNS64): <code>https://dns64.dns.google/dns-query</code><br>DoT(DNS64): <code>dns64.dns.google</code></p><h5 id="Cloudflare-1-1-1-1"><a href="#Cloudflare-1-1-1-1" class="headerlink" title="Cloudflare 1.1.1.1"></a>Cloudflare 1.1.1.1</h5><p>国外连通性天花板，大陆连通性一般，移动友好<br>IPv4: <code>1.1.1.1</code>, <code>1.0.0.1</code><br>IPv6: <code>2606:4700:4700::1111</code>, <code>2606:4700:4700::1001</code><br>DoH: <code>https://cloudflare-dns.com/dns-query</code><br>DoT: <code>1dot1dot1dot1.cloudflare-dns.com</code>, <code>one.one.one.one</code><br>DNS64: <code>2606:4700:4700::64</code>, <code>2606:4700:4700::6400</code>  </p><h5 id="Quad9-DNS"><a href="#Quad9-DNS" class="headerlink" title="Quad9 DNS"></a>Quad9 DNS</h5><p>IBM，国外不错<br>IPv4: <code>9.9.9.9</code>, <code>149.112.112.112</code><br>IPv6: <code>2620:fe::fe</code>, <code>2620:fe::9</code><br>DoH: <code>https://dns.quad9.net/dns-query</code><br>DoT: <code>dns.quad9.net</code>  </p><h5 id="OpenDNS"><a href="#OpenDNS" class="headerlink" title="OpenDNS"></a>OpenDNS</h5><p>Cisco提供，老牌，国外不错<br>IPv4: <code>208.67.222.222</code>, <code>208.67.220.220</code>, <code>208.67.222.220</code>, <code>208.67.220.222</code><br>IPv6: <code>2620:119:35::35</code>, <code>2620:119:53::53</code><br>DoH: <code>https://doh.opendns.com/dns-query</code>  </p><h5 id="Neustar-UltraDNS"><a href="#Neustar-UltraDNS" class="headerlink" title="Neustar UltraDNS"></a>Neustar UltraDNS</h5><p>Neustar提供，有国内节点，移动会被丢到国外<br>IPv4: <code>64.6.64.6</code>, <code>64.6.65.6</code><br>IPv6: <code>2620:74:1b::1:1</code>, <code>2620:74:1c::2:2</code>  </p><h3 id="More…"><a href="#More…" class="headerlink" title="More…"></a>More…</h3><p>有更多的吗？<br>欢迎到 <a href="https://lemonawa.xyz/about">https://lemonawa.xyz/about</a> 页面中的<code>Contact me</code>联系我添加~</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>(摘抄自维基百科)</p><blockquote><p>域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。</p></blockquote><h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><p>此处仅展示<strong>广义上</strong>的概念，部分(如Cloudflare)有特殊解释的将会在后面说明<br>DoH: DNS over HTTPS (基于HTTPS的DNS)<br>DoT: DNS over TLS (基于TLS的DNS)<br>DNS64: 一种在不存在 AAAA 记录时从 A 记录合成 AAAA 记录的机制，用于支持纯IPv6网络</p><h3 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h3><h4 id="大陆"><a href="#大陆" class="headerlink" title="大陆"></a>大陆</h4><h5 id="Dnspod"><a href="#Dnspod" class="headerlink" title="Dnspod"></a>Dnspod</h5><p>Dnspod目前为腾讯所有，海内外的连通性都不错<br>IPv4: <code>119.29.29.29</code><br>IPv6: <code>2402:4e00::</code><br>DoH: <code>https://doh.pub/dns-query</code><br>DoH(IP): <code>https://1.12.12.12/dns-query</code>, <code>https://120.53.53.53/dns-query</code><br>DoH(国密SM2): <code>https://sm2.doh.pub/dns-query</code><br>DoT: <code>dot.pub</code><br>DoT(IP): <code>1.12.12.12</code>, <code>120.53.53.53</code>  </p><h5 id="Alidns"><a href="#Alidns" class="headerlink" title="Alidns"></a>Alidns</h5><p>阿里巴巴提供的DNS服务，国内连通性好，国外连通性差<br>IPv4: <code>223.5.5.5</code>, <code>223.6.6.6</code><br>IPv6: <code>2400:3200::1</code>, <code>2400:3200:baba::1</code><br>DoH: <code>https://dns.alidns.com/dns-query</code><br>DoT: <code>dns.alidns.com</code></p><h5 id="114DNS"><a href="#114DNS" class="headerlink" title="114DNS"></a>114DNS</h5><p>老牌，国外一般<br>IPv4: <code>114.114.114.114</code>, <code>114.114.115.115</code></p><h5 id="CNNIC-DNS"><a href="#CNNIC-DNS" class="headerlink" title="CNNIC DNS"></a>CNNIC DNS</h5><p>中国互联网信息中心提供，国外连通性差<br>IPv4: <code>1.2.4.8</code>, <code>210.2.4.8</code><br>IPv6: <code>2001:dc7:1000::1</code></p><h5 id="Baidu-DNS"><a href="#Baidu-DNS" class="headerlink" title="Baidu DNS"></a>Baidu DNS</h5><p>百度提供，海外一般<br>IPv4: <code>180.76.76.76</code><br>IPv6: <code>2400:da00::6666</code></p><h5 id="360-DNS"><a href="#360-DNS" class="headerlink" title="360 DNS"></a>360 DNS</h5><p>国内单节点<br>IPv4(电信+铁通+移动): <code>101.226.4.6</code>, <code>218.30.118.6</code><br>IPv4(联通): <code>123.125.81.6</code>, <code>140.207.198.6</code><br>DoH: <code>https://doh.360.cn</code><br>DoT: <code>dot.360.cn</code></p><h4 id="海外"><a href="#海外" class="headerlink" title="海外"></a>海外</h4><p><strong>此处列出的DoT服务大部分无法使用</strong></p><h5 id="Google-Public-DNS"><a href="#Google-Public-DNS" class="headerlink" title="Google Public DNS"></a>Google Public DNS</h5><p>老牌，国内连通性还可以，国外连通性极好<br>IPv4: <code>8.8.8.8</code>, <code>8.8.4.4</code><br>IPv6: <code>2001:4860:4860::8888</code>, <code>2001:4860:4860::8844</code><br>DoH: <code>https://dns.google/dns-query</code><br>DoT: <code>dns.google</code><br>DNS64: <code>2001:4860:4860::6464</code>, <code>2001:4860:4860::64</code><br>DoH(DNS64): <code>https://dns64.dns.google/dns-query</code><br>DoT(DNS64): <code>dns64.dns.google</code></p><h5 id="Cloudflare-1-1-1-1"><a href="#Cloudflare-1-1-1-1" class="headerlink" title="Cloudflare 1.1.1.1"></a>Cloudflare 1.1.1.1</h5><p>国外连通性天花板，大陆连通性一般，移动友好<br>IPv4: <code>1.1.1.1</code>, <code>1.0.0.1</code><br>IPv6: <code>2606:4700:4700::1111</code>, <code>2606:4700:4700::1001</code><br>DoH: <code>https://cloudflare-dns.com/dns-query</code><br>DoT: <code>1dot1dot1dot1.cloudflare-dns.com</code>, <code>one.one.one.one</code><br>DNS64: <code>2606:4700:4700::64</code>, <code>2606:4700:4700::6400</code>  </p><h5 id="Quad9-DNS"><a href="#Quad9-DNS" class="headerlink" title="Quad9 DNS"></a>Quad9 DNS</h5><p>IBM，国外不错<br>IPv4: <code>9.9.9.9</code>, <code>149.112.112.112</code><br>IPv6: <code>2620:fe::fe</code>, <code>2620:fe::9</code><br>DoH: <code>https://dns.quad9.net/dns-query</code><br>DoT: <code>dns.quad9.net</code>  </p><h5 id="OpenDNS"><a href="#OpenDNS" class="headerlink" title="OpenDNS"></a>OpenDNS</h5><p>Cisco提供，老牌，国外不错<br>IPv4: <code>208.67.222.222</code>, <code>208.67.220.220</code>, <code>208.67.222.220</code>, <code>208.67.220.222</code><br>IPv6: <code>2620:119:35::35</code>, <code>2620:119:53::53</code><br>DoH: <code>https://doh.opendns.com/dns-query</code>  </p><h5 id="Neustar-UltraDNS"><a href="#Neustar-UltraDNS" class="headerlink" title="Neustar UltraDNS"></a>Neustar UltraDNS</h5><p>Neustar提供，有国内节点，移动会被丢到国外<br>IPv4: <code>64.6.64.6</code>, <code>64.6.65.6</code><br>IPv6: <code>2620:74:1b::1:1</code>, <code>2620:74:1c::2:2</code>  </p><h3 id="More…"><a href="#More…" class="headerlink" title="More…"></a>More…</h3><p>有更多的DNS服务器推荐吗？<br>欢迎到 <a href="https://lemonawa.xyz/about">https://lemonawa.xyz/about</a> 页面中的<code>Contact me</code>联系我添加~</p>]]></content>
     
     
       
@@ -165,7 +132,7 @@
     <link href="https://www.lemonawa.xyz/2022/03/21/links/"/>
     <id>https://www.lemonawa.xyz/2022/03/21/links/</id>
     <published>2022-03-20T16:07:34.000Z</published>
-    <updated>2022-03-20T16:08:38.437Z</updated>
+    <updated>2022-03-26T16:18:15.614Z</updated>
     
     <content type="html"><![CDATA[<p>访问：<a href="https://lemonawa.xyz/links">https://lemonawa.xyz/links</a> 获取更多信息</p>]]></content>
     
@@ -232,9 +199,9 @@
     
     
     
-    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="Telegram" scheme="https://www.lemonawa.xyz/tags/Telegram/"/>
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
