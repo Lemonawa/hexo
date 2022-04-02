@@ -6,7 +6,7 @@
   <link href="https://www.lemonawa.xyz/atom.xml" rel="self"/>
   
   <link href="https://www.lemonawa.xyz/"/>
-  <updated>2022-03-26T16:23:07.114Z</updated>
+  <updated>2022-04-02T16:13:03.732Z</updated>
   <id>https://www.lemonawa.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在Vercel部署umami网站统计</title>
+    <link href="https://www.lemonawa.xyz/2022/04/02/umami/"/>
+    <id>https://www.lemonawa.xyz/2022/04/02/umami/</id>
+    <published>2022-04-02T15:13:42.000Z</published>
+    <updated>2022-04-02T16:13:03.732Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s2.loli.net/2022/04/03/UqspClrMa5PZWE2.png"></p><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote><p>Umami 是一种简单、快速的网站分析替代品，可替代 Google Analytics。</p></blockquote><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ul><li><p>一个<a href="https://github.com/">GitHub</a>账号</p></li><li><p>一个<a href="https://vercel.com/">Vercel</a>账号（可直接由GitHub登录）</p></li><li><p>一个<a href="https://app.supabase.io/">supabase</a>账号（可直接由GitHub登录）</p></li></ul><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>访问<a href="https://github.com/mikecao/umami">umami的代码仓库</a>，将其Fork至自己的账户中</p><p>登录<a href="https://app.supabase.io/">supabase</a>，单击<code>New Project</code>来新建一个数据库，根据提示设置数据库名称和密码</p><p><img src="https://s2.loli.net/2022/04/03/n4iOyxB9KmFcItC.png"></p><p>进入刚刚新建的Project，点击左边的SQL Editor（命令图标）- New query来新建查询，并将<a href="https://github.com/mikecao/umami/blob/master/sql/schema.postgresql.sql">此处</a>的命令全部复制到框中，随后点击RUN，看见Success即可</p><p><img src="https://s2.loli.net/2022/04/03/Ldrg1HbKmw59PMY.png"></p><p>然后打开<a href="https://vercel.com/">Vercel</a>，登录，点击<code>New Project</code>，在左侧选中Fork的项目，点击Environment Variables来设置环境变量：</p><p><img src="https://s2.loli.net/2022/04/03/ADflnKVoJhiHqz1.png"></p><p><code>DATABASE_URL</code>: <code>postgresql://postgres:[YOUR-PASSWORD]@[Your-URI]:5432/postgres</code>（在supabase project-左侧设置-Database-Connection string-URI获得）</p><p><code>HASH_SALT</code>: 随机英文字符串（滚键盘）</p><p>然后点击部署，部署完成后会给一个域名，点击即可进入</p><p>用户名：admin</p><p>默认密码：umami</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2022/04/03/UqspClrMa5PZWE2.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;bl</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Vercel" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/Vercel/"/>
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Vercel" scheme="https://www.lemonawa.xyz/tags/Vercel/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub Student Developer Pack 的申请教程</title>
