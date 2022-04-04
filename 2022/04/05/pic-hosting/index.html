@@ -17,7 +17,7 @@
     <meta name="keywords" content="Lemonawa、柠檬awa、互联网、博客、小站">
 
 
-<title>常用静态公共CDN评测 | Lemonawa&#39;s Blog</title>
+<title>各类主流图床评测 | Lemonawa&#39;s Blog</title>
 
 
 
@@ -190,7 +190,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">常用静态公共CDN评测</h1>
+            <h1 class="post-title">各类主流图床评测</h1>
             
                 <div class="post-meta">
                     
@@ -199,7 +199,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">一月 30, 2022&nbsp;&nbsp;20:00:00</a>
+                        Date: <a href="#">四月 5, 2022&nbsp;&nbsp;1:39:28</a>
                         </span>
                     
                     
@@ -215,18 +215,33 @@
         </header>
 
         <div class="post-content">
-            <p>静态公共CDN，几乎每一位站长都会使用，因为它不仅可以节省服务器的流量，同时还有助于提升访问速度。<br>本文将以内容、速度、宕机率来测评。</p>
-<span id="more"></span>
-
-<h1 id="1-Jsdelivr"><a href="#1-Jsdelivr" class="headerlink" title="1.Jsdelivr"></a>1.Jsdelivr</h1><p>推荐指数：⭐⭐⭐<br>官网：<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/">CDN加速站</a> <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">主站</a><br>内容：NPM（无registry），Github，Wordpress<br>速度：国内慢，国外快到离谱（2021年12月20日，他们丢失了ICP许可证，如今走Cloudflare）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Unfortunately today jsDelivr unexpectedly lost its ICP license in China. </span><br><span class="line">As effect the Quantil CDN disabled our account.</span><br><span class="line">From now on all Chinese traffic will be served by &quot;near China&quot; locations </span><br><span class="line">provided by global CDN providers.</span><br></pre></td></tr></table></figure>
-
-<p>IT狗测速如下：<br><img src="https://i0.hdslb.com/bfs/album/5331fb9acc1f451a5c7a98f5b3b54eb3c2b9242f.png"></p>
-<h1 id="2-Cdnjs"><a href="#2-Cdnjs" class="headerlink" title="2.Cdnjs"></a>2.Cdnjs</h1><p>推荐指数：⭐⭐⭐<br>官网：<a target="_blank" rel="noopener" href="https://cdnjs.cloudflare.com/">CDN加速站</a> <a target="_blank" rel="noopener" href="https://cdnjs.com/">主站</a><br>内容：Cdnjs<br>速度：国内慢，国外快到离谱<br>测速：<br><img src="https://i0.hdslb.com/bfs/album/5331fb9acc1f451a5c7a98f5b3b54eb3c2b9242f.png"><br><del>同一张图，因为都走cloudflare</del></p>
-<h1 id="3-Staticfile"><a href="#3-Staticfile" class="headerlink" title="3.Staticfile"></a>3.Staticfile</h1><p>推荐指数：⭐⭐⭐⭐⭐<br>官网：<a target="_blank" rel="noopener" href="https://cdn.staticfile.org/">CDN加速站</a> <a target="_blank" rel="noopener" href="https://staticfile.org/">主站</a><br>内容：Cdnjs+国内开发者贡献库<br>速度：快到离谱<br>测速：<br><img src="https://i0.hdslb.com/bfs/album/a5fd5fa61af3e4246ba99b90cea9dfd952c274af.png"></p>
-<h1 id="4-Bootcdn"><a href="#4-Bootcdn" class="headerlink" title="4.Bootcdn"></a>4.Bootcdn</h1><p>推荐指数：⭐⭐<br>官网：<a target="_blank" rel="noopener" href="https://cdn.bootcdn.net/">CDN加速站</a> <a target="_blank" rel="noopener" href="https://bootcdn.cn/">主站</a><br>内容：Cdnjs+国内开发者贡献库<br>速度：国内快到离谱，海外慢（国内多节点）<br>测速：<br><img src="https://i0.hdslb.com/bfs/album/97fd70385bea1c50455e6dac1908819826642a37.png"></p>
-<h1 id="5-75CDN"><a href="#5-75CDN" class="headerlink" title="5.75CDN"></a>5.75CDN</h1><p>推荐指数：⭐⭐⭐⭐<br>官网：<a target="_blank" rel="noopener" href="https://lib.baomitu.com/">CDN加速站</a> <a target="_blank" rel="noopener" href="https://cdn.baomitu.com/">主站</a><br>内容：Cdnjs<br>速度：快到离谱<br>测速：<br><img src="https://i0.hdslb.com/bfs/album/a5fd5fa61af3e4246ba99b90cea9dfd952c274af.png"></p>
-<h1 id="等等，宕机率呢？"><a href="#等等，宕机率呢？" class="headerlink" title="等等，宕机率呢？"></a>等等，宕机率呢？</h1><p>除了Bootcdn，其他好像都不错<br>可以在<a target="_blank" rel="noopener" href="https://uptime.lemonawa.xyz/">此处</a>自行查看</p>
+            <h3 id="开端"><a href="#开端" class="headerlink" title="开端"></a>开端</h3><p>在写博客的时候，我们通常都要给自己的文章插入图片</p>
+<p>而图片通常会托管于某个图床(或公共api)上</p>
+<p>本文将对主流的几个图床进行测试</p>
+<h3 id="评测"><a href="#评测" class="headerlink" title="评测"></a>评测</h3><h2 id="1-sm-ms图床"><a href="#1-sm-ms图床" class="headerlink" title="1. sm.ms图床"></a>1. sm.ms图床</h2><p>官网： <a target="_blank" rel="noopener" href="https://sm.ms/">https://sm.ms</a></p>
+<p>这是一个老牌图床了，使用CloudFlare进行CDN加速</p>
+<p>Itdog测试：</p>
+<p><img src="https://i0.hdslb.com/bfs/album/7657b5efd90f682508c5a55c660529c59a29bbd3.png"></p>
+<p>测试地址：</p>
+<p><a target="_blank" rel="noopener" href="https://s2.loli.net/2022/04/05/Ae6swOFVzgMr8ij.png">https://s2.loli.net/2022/04/05/Ae6swOFVzgMr8ij.png</a></p>
+<h3 id="2-GitHub-图床"><a href="#2-GitHub-图床" class="headerlink" title="2. GitHub 图床"></a>2. GitHub 图床</h3><p>使用GitHub作为存储位置，使用Fastly进行加速</p>
+<p><strong>注意：移动已墙</strong></p>
+<p>Itdog测试：</p>
+<p><img src="https://i0.hdslb.com/bfs/album/8915d5f686de8195991139d90ff235b819acd22c.png"></p>
+<p>测试地址：</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Lemonawa/pic-hosting/main/97b97ee1173042d5ba667df7ecbe43f6.png">https://raw.githubusercontent.com/Lemonawa/pic-hosting/main/97b97ee1173042d5ba667df7ecbe43f6.png</a></p>
+<h3 id="3-GitHub-JsDelivr"><a href="#3-GitHub-JsDelivr" class="headerlink" title="3. GitHub + JsDelivr"></a>3. GitHub + JsDelivr</h3><p>官网：<a target="_blank" rel="noopener" href="https://jsdelivr.com/">https://jsdelivr.com</a></p>
+<p>GitHub存储，JsDelivrCDN加速(Cloudflare+Fastly)</p>
+<p><strong>注意：违反ToS</strong></p>
+<p>Itdog测试：</p>
+<p><img src="https://i0.hdslb.com/bfs/album/61b1ea1a5a031fd213b8269ca5615187c08ef497.png"></p>
+<p>测试地址：</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Lemonawa/pic-hosting@main/97b97ee1173042d5ba667df7ecbe43f6.png">https://cdn.jsdelivr.net/gh/Lemonawa/pic-hosting@main/97b97ee1173042d5ba667df7ecbe43f6.png</a></p>
+<h3 id="5-Bilibili图床"><a href="#5-Bilibili图床" class="headerlink" title="5. Bilibili图床"></a>5. Bilibili图床</h3><p>B站御用，国内外大量节点</p>
+<p>我自己目前也在使用</p>
+<p><img src="https://i0.hdslb.com/bfs/album/78d4b13f13c8229df2f42a024affce944bf7dc6b.png"></p>
+<p>测试地址：</p>
+<p><a target="_blank" rel="noopener" href="https://i0.hdslb.com/bfs/album/f7def05bfa96d26b40ace918cff4ea4ef9aad9b5.png">https://i0.hdslb.com/bfs/album/f7def05bfa96d26b40ace918cff4ea4ef9aad9b5.png</a></p>
 
         </div>
 
@@ -241,7 +256,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://www.lemonawa.xyz/2022/01/30/public-cdn/">https://www.lemonawa.xyz/2022/01/30/public-cdn/</a></span>
+                        <span><a href="https://www.lemonawa.xyz/2022/04/05/pic-hosting/">https://www.lemonawa.xyz/2022/04/05/pic-hosting/</a></span>
                     </p>
                 
                 
@@ -262,7 +277,7 @@
                     
                         <a href="/tags/%E8%AF%84%E6%B5%8B/"># 评测</a>
                     
-                        <a href="/tags/CDN/"># CDN</a>
+                        <a href="/tags/%E5%9B%BE%E5%BA%8A/"># 图床</a>
                     
                         
                 </span>
@@ -275,8 +290,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2022/03/15/pgm/">Telegram 人形自走机器人 PagerMaid-Modify安装教程</a>
             
+            <a class="next" rel="next" href="/2022/04/02/umami/">在Vercel部署umami网站统计</a>
             
         </section>
 
