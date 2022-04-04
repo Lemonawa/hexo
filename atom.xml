@@ -163,6 +163,37 @@
   </entry>
   
   <entry>
+    <title>为Hexo添加RSS订阅页面和站点地图</title>
+    <link href="https://www.lemonawa.xyz/2022/03/21/sitemapandrss/"/>
+    <id>https://www.lemonawa.xyz/2022/03/21/sitemapandrss/</id>
+    <published>2022-03-20T17:17:52.000Z</published>
+    <updated>2022-04-04T18:17:19.885Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="RSS订阅插件安装"><a href="#RSS订阅插件安装" class="headerlink" title="RSS订阅插件安装"></a>RSS订阅插件安装</h3><p>打开hexo所在目录的命令行，输入以下命令安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure><p>如果你有安装<code>yarn</code>的话，建议使用<code>yarn</code>：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-feed</span><br></pre></td></tr></table></figure><p>然后在<code>_config.yml</code>中添加此项：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rss： /atom.xml</span><br></pre></td></tr></table></figure><p>最终RSS文件<code>atom.xml</code>会在<code>https://example.com/atom.xml</code>处生成</p><h3 id="站点地图插件安装"><a href="#站点地图插件安装" class="headerlink" title="站点地图插件安装"></a>站点地图插件安装</h3><p>打开hexo所在目录的命令行，输入以下命令安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><p>如果你有安装<code>yarn</code>的话，建议使用<code>yarn</code>：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-sitemap</span><br></pre></td></tr></table></figure><p>最终站点地图文件<code>sitemap.xml</code>会在<code>https://example.com/sitemap.xml</code>处生成</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;RSS订阅插件安装&quot;&gt;&lt;a href=&quot;#RSS订阅插件安装&quot; class=&quot;headerlink&quot; title=&quot;RSS订阅插件安装&quot;&gt;&lt;/a&gt;RSS订阅插件安装&lt;/h3&gt;&lt;p&gt;打开hexo所在目录的命令行，输入以下命令安装&lt;/p&gt;
+&lt;figure class=</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="RSS" scheme="https://www.lemonawa.xyz/tags/RSS/"/>
+    
+    <category term="Sitemap" scheme="https://www.lemonawa.xyz/tags/Sitemap/"/>
+    
+    <category term="站点地图" scheme="https://www.lemonawa.xyz/tags/%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Windterm：用于DevOps的一个更快更好的SSH/Telnet/Serial/Shell/Sftp客户端.</title>
     <link href="https://www.lemonawa.xyz/2022/03/21/windterm/"/>
     <id>https://www.lemonawa.xyz/2022/03/21/windterm/</id>

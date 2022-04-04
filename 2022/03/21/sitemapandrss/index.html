@@ -17,7 +17,7 @@
     <meta name="keywords" content="Lemonawa、柠檬awa、互联网、博客、小站">
 
 
-<title>各大厂商公共DNS大全【持续更新】 | Lemonawa&#39;s Blog</title>
+<title>为Hexo添加RSS订阅页面和站点地图 | Lemonawa&#39;s Blog</title>
 
 
 
@@ -190,7 +190,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">各大厂商公共DNS大全【持续更新】</h1>
+            <h1 class="post-title">为Hexo添加RSS订阅页面和站点地图</h1>
             
                 <div class="post-meta">
                     
@@ -199,33 +199,39 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">三月 21, 2022&nbsp;&nbsp;23:26:11</a>
+                        Date: <a href="#">三月 21, 2022&nbsp;&nbsp;1:17:52</a>
                         </span>
                     
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+                            
+                        </span>
                     
                 </div>
             
         </header>
 
         <div class="post-content">
-            <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>(摘抄自维基百科)</p>
-<blockquote>
-<p>域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。</p>
-</blockquote>
-<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><p>此处仅展示<strong>广义上</strong>的概念，部分(如Cloudflare)有特殊解释的将会在后面说明<br>DoH: DNS over HTTPS (基于HTTPS的DNS)<br>DoT: DNS over TLS (基于TLS的DNS)<br>DNS64: 一种在不存在 AAAA 记录时从 A 记录合成 AAAA 记录的机制，用于支持纯IPv6网络</p>
-<h3 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h3><h4 id="大陆"><a href="#大陆" class="headerlink" title="大陆"></a>大陆</h4><h5 id="Dnspod"><a href="#Dnspod" class="headerlink" title="Dnspod"></a>Dnspod</h5><p>Dnspod目前为腾讯所有，海内外的连通性都不错<br>IPv4: <code>119.29.29.29</code><br>IPv6: <code>2402:4e00::</code><br>DoH: <code>https://doh.pub/dns-query</code><br>DoH(IP): <code>https://1.12.12.12/dns-query</code>, <code>https://120.53.53.53/dns-query</code><br>DoH(国密SM2): <code>https://sm2.doh.pub/dns-query</code><br>DoT: <code>dot.pub</code><br>DoT(IP): <code>1.12.12.12</code>, <code>120.53.53.53</code>  </p>
-<h5 id="Alidns"><a href="#Alidns" class="headerlink" title="Alidns"></a>Alidns</h5><p>阿里巴巴提供的DNS服务，国内连通性好，国外连通性差<br>IPv4: <code>223.5.5.5</code>, <code>223.6.6.6</code><br>IPv6: <code>2400:3200::1</code>, <code>2400:3200:baba::1</code><br>DoH: <code>https://dns.alidns.com/dns-query</code><br>DoT: <code>dns.alidns.com</code></p>
-<h5 id="114DNS"><a href="#114DNS" class="headerlink" title="114DNS"></a>114DNS</h5><p>老牌，国外一般<br>IPv4: <code>114.114.114.114</code>, <code>114.114.115.115</code></p>
-<h5 id="CNNIC-DNS"><a href="#CNNIC-DNS" class="headerlink" title="CNNIC DNS"></a>CNNIC DNS</h5><p>中国互联网信息中心提供，国外连通性差<br>IPv4: <code>1.2.4.8</code>, <code>210.2.4.8</code><br>IPv6: <code>2001:dc7:1000::1</code></p>
-<h5 id="Baidu-DNS"><a href="#Baidu-DNS" class="headerlink" title="Baidu DNS"></a>Baidu DNS</h5><p>百度提供，海外一般<br>IPv4: <code>180.76.76.76</code><br>IPv6: <code>2400:da00::6666</code></p>
-<h5 id="360-DNS"><a href="#360-DNS" class="headerlink" title="360 DNS"></a>360 DNS</h5><p>国内单节点<br>IPv4(电信+铁通+移动): <code>101.226.4.6</code>, <code>218.30.118.6</code><br>IPv4(联通): <code>123.125.81.6</code>, <code>140.207.198.6</code><br>DoH: <code>https://doh.360.cn</code><br>DoT: <code>dot.360.cn</code></p>
-<h4 id="海外"><a href="#海外" class="headerlink" title="海外"></a>海外</h4><p><strong>此处列出的DoT服务大部分无法使用</strong></p>
-<h5 id="Google-Public-DNS"><a href="#Google-Public-DNS" class="headerlink" title="Google Public DNS"></a>Google Public DNS</h5><p>老牌，国内连通性还可以，国外连通性极好<br>IPv4: <code>8.8.8.8</code>, <code>8.8.4.4</code><br>IPv6: <code>2001:4860:4860::8888</code>, <code>2001:4860:4860::8844</code><br>DoH: <code>https://dns.google/dns-query</code><br>DoT: <code>dns.google</code><br>DNS64: <code>2001:4860:4860::6464</code>, <code>2001:4860:4860::64</code><br>DoH(DNS64): <code>https://dns64.dns.google/dns-query</code><br>DoT(DNS64): <code>dns64.dns.google</code></p>
-<h5 id="Cloudflare-1-1-1-1"><a href="#Cloudflare-1-1-1-1" class="headerlink" title="Cloudflare 1.1.1.1"></a>Cloudflare 1.1.1.1</h5><p>国外连通性天花板，大陆连通性一般，移动友好<br>IPv4: <code>1.1.1.1</code>, <code>1.0.0.1</code><br>IPv6: <code>2606:4700:4700::1111</code>, <code>2606:4700:4700::1001</code><br>DoH: <code>https://cloudflare-dns.com/dns-query</code><br>DoT: <code>1dot1dot1dot1.cloudflare-dns.com</code>, <code>one.one.one.one</code><br>DNS64: <code>2606:4700:4700::64</code>, <code>2606:4700:4700::6400</code>  </p>
-<h5 id="Quad9-DNS"><a href="#Quad9-DNS" class="headerlink" title="Quad9 DNS"></a>Quad9 DNS</h5><p>IBM，国外不错<br>IPv4: <code>9.9.9.9</code>, <code>149.112.112.112</code><br>IPv6: <code>2620:fe::fe</code>, <code>2620:fe::9</code><br>DoH: <code>https://dns.quad9.net/dns-query</code><br>DoT: <code>dns.quad9.net</code>  </p>
-<h5 id="OpenDNS"><a href="#OpenDNS" class="headerlink" title="OpenDNS"></a>OpenDNS</h5><p>Cisco提供，老牌，国外不错<br>IPv4: <code>208.67.222.222</code>, <code>208.67.220.220</code>, <code>208.67.222.220</code>, <code>208.67.220.222</code><br>IPv6: <code>2620:119:35::35</code>, <code>2620:119:53::53</code><br>DoH: <code>https://doh.opendns.com/dns-query</code>  </p>
-<h5 id="Neustar-UltraDNS"><a href="#Neustar-UltraDNS" class="headerlink" title="Neustar UltraDNS"></a>Neustar UltraDNS</h5><p>Neustar提供，有国内节点，移动会被丢到国外<br>IPv4: <code>64.6.64.6</code>, <code>64.6.65.6</code><br>IPv6: <code>2620:74:1b::1:1</code>, <code>2620:74:1c::2:2</code>  </p>
-<h3 id="More…"><a href="#More…" class="headerlink" title="More…"></a>More…</h3><p>有更多的DNS服务器推荐吗？<br>欢迎到 <a target="_blank" rel="noopener" href="https://lemonawa.xyz/about">https://lemonawa.xyz/about</a> 页面中的<code>Contact me</code>联系我添加~</p>
+            <h3 id="RSS订阅插件安装"><a href="#RSS订阅插件安装" class="headerlink" title="RSS订阅插件安装"></a>RSS订阅插件安装</h3><p>打开hexo所在目录的命令行，输入以下命令安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<p>如果你有安装<code>yarn</code>的话，建议使用<code>yarn</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-feed</span><br></pre></td></tr></table></figure>
+
+<p>然后在<code>_config.yml</code>中添加此项：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rss： /atom.xml</span><br></pre></td></tr></table></figure>
+
+<p>最终RSS文件<code>atom.xml</code>会在<code>https://example.com/atom.xml</code>处生成</p>
+<h3 id="站点地图插件安装"><a href="#站点地图插件安装" class="headerlink" title="站点地图插件安装"></a>站点地图插件安装</h3><p>打开hexo所在目录的命令行，输入以下命令安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<p>如果你有安装<code>yarn</code>的话，建议使用<code>yarn</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-sitemap</span><br></pre></td></tr></table></figure>
+
+<p>最终站点地图文件<code>sitemap.xml</code>会在<code>https://example.com/sitemap.xml</code>处生成</p>
 
         </div>
 
@@ -240,7 +246,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://www.lemonawa.xyz/2022/03/21/dns/">https://www.lemonawa.xyz/2022/03/21/dns/</a></span>
+                        <span><a href="https://www.lemonawa.xyz/2022/03/21/sitemapandrss/">https://www.lemonawa.xyz/2022/03/21/sitemapandrss/</a></span>
                     </p>
                 
                 
@@ -259,15 +265,13 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/DNS/"># DNS</a>
+                        <a href="/tags/%E6%95%99%E7%A8%8B/"># 教程</a>
                     
-                        <a href="/tags/Cloudflare/"># Cloudflare</a>
+                        <a href="/tags/RSS/"># RSS</a>
                     
-                        <a href="/tags/Dnspod/"># Dnspod</a>
+                        <a href="/tags/Sitemap/"># Sitemap</a>
                     
-                        <a href="/tags/Tencent/"># Tencent</a>
-                    
-                        <a href="/tags/Aliyun/"># Aliyun</a>
+                        <a href="/tags/%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/"># 站点地图</a>
                     
                         
                 </span>
@@ -280,10 +284,10 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2022/03/23/private-browser/">如何在浏览器中保护自己的隐私？</a>
+                <a class="prev" rel="prev" href="/2022/03/21/dns/">各大厂商公共DNS大全【持续更新】</a>
             
             
-            <a class="next" rel="next" href="/2022/03/21/sitemapandrss/">为Hexo添加RSS订阅页面和站点地图</a>
+            <a class="next" rel="next" href="/2022/03/21/windterm/">Windterm：用于DevOps的一个更快更好的SSH/Telnet/Serial/Shell/Sftp客户端.</a>
             
         </section>
 
