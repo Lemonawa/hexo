@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Lemonawa&#39;s Blog</title>
+  
+  
+  <link href="https://www.lemonawa.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://www.lemonawa.xyz/"/>
+  <updated>2022-04-04T18:20:20.185Z</updated>
+  <id>https://www.lemonawa.xyz/</id>
+  
+  <author>
+    <name>Lemonawa</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>各类主流图床评测</title>
+    <link href="https://www.lemonawa.xyz/2022/04/05/pic-hosting/"/>
+    <id>https://www.lemonawa.xyz/2022/04/05/pic-hosting/</id>
+    <published>2022-04-04T17:39:28.000Z</published>
+    <updated>2022-04-04T18:20:20.185Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="开端"><a href="#开端" class="headerlink" title="开端"></a>开端</h3><p>在写博客的时候，我们通常都要给自己的文章插入图片</p><p>而图片通常会托管于某个图床(或公共api)上</p><p>本文将对主流的几个图床进行测试</p><h3 id="评测"><a href="#评测" class="headerlink" title="评测"></a>评测</h3><h4 id="1-sm-ms图床"><a href="#1-sm-ms图床" class="headerlink" title="1. sm.ms图床"></a>1. sm.ms图床</h4><p>官网： <a href="https://sm.ms/">https://sm.ms</a></p><p>这是一个老牌图床了，使用CloudFlare进行CDN加速</p><p>Itdog测试：</p><p><img src="https://i0.hdslb.com/bfs/album/7657b5efd90f682508c5a55c660529c59a29bbd3.png"></p><p>测试地址：</p><p><a href="https://s2.loli.net/2022/04/05/Ae6swOFVzgMr8ij.png">https://s2.loli.net/2022/04/05/Ae6swOFVzgMr8ij.png</a></p><h4 id="2-GitHub-图床"><a href="#2-GitHub-图床" class="headerlink" title="2. GitHub 图床"></a>2. GitHub 图床</h4><p>使用GitHub作为存储位置，使用Fastly进行加速</p><p><strong>注意：移动已墙</strong></p><p>Itdog测试：</p><p><img src="https://i0.hdslb.com/bfs/album/8915d5f686de8195991139d90ff235b819acd22c.png"></p><p>测试地址：</p><p><a href="https://raw.githubusercontent.com/Lemonawa/pic-hosting/main/97b97ee1173042d5ba667df7ecbe43f6.png">https://raw.githubusercontent.com/Lemonawa/pic-hosting/main/97b97ee1173042d5ba667df7ecbe43f6.png</a></p><h4 id="3-GitHub-JsDelivr"><a href="#3-GitHub-JsDelivr" class="headerlink" title="3. GitHub + JsDelivr"></a>3. GitHub + JsDelivr</h4><p>官网：<a href="https://jsdelivr.com/">https://jsdelivr.com</a></p><p>GitHub存储，JsDelivrCDN加速(Cloudflare+Fastly)</p><p><strong>注意：违反ToS</strong></p><p>Itdog测试：</p><p><img src="https://i0.hdslb.com/bfs/album/61b1ea1a5a031fd213b8269ca5615187c08ef497.png"></p><p>测试地址：</p><p><a href="https://cdn.jsdelivr.net/gh/Lemonawa/pic-hosting@main/97b97ee1173042d5ba667df7ecbe43f6.png">https://cdn.jsdelivr.net/gh/Lemonawa/pic-hosting@main/97b97ee1173042d5ba667df7ecbe43f6.png</a></p><h4 id="4-Bilibili图床"><a href="#4-Bilibili图床" class="headerlink" title="4. Bilibili图床"></a>4. Bilibili图床</h4><p>B站御用，国内外大量节点</p><p>我自己目前也在使用</p><p><img src="https://i0.hdslb.com/bfs/album/78d4b13f13c8229df2f42a024affce944bf7dc6b.png"></p><p>测试地址：</p><p><a href="https://i0.hdslb.com/bfs/album/f7def05bfa96d26b40ace918cff4ea4ef9aad9b5.png">https://i0.hdslb.com/bfs/album/f7def05bfa96d26b40ace918cff4ea4ef9aad9b5.png</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;开端&quot;&gt;&lt;a href=&quot;#开端&quot; class=&quot;headerlink&quot; title=&quot;开端&quot;&gt;&lt;/a&gt;开端&lt;/h3&gt;&lt;p&gt;在写博客的时候，我们通常都要给自己的文章插入图片&lt;/p&gt;
+&lt;p&gt;而图片通常会托管于某个图床(或公共api)上&lt;/p&gt;
+&lt;p&gt;本文将对主流的几</summary>
+      
+    
+    
+    
+    <category term="评测" scheme="https://www.lemonawa.xyz/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="评测" scheme="https://www.lemonawa.xyz/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+    <category term="图床" scheme="https://www.lemonawa.xyz/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Vercel部署umami网站统计</title>
+    <link href="https://www.lemonawa.xyz/2022/04/02/umami/"/>
+    <id>https://www.lemonawa.xyz/2022/04/02/umami/</id>
+    <published>2022-04-02T15:13:42.000Z</published>
+    <updated>2022-04-04T17:30:06.771Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i0.hdslb.com/bfs/album/b417c98fd5236e1ad605ad1ac14e6ba8bc5ce62b.png"></p><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote><p>Umami 是一种简单、快速的网站分析替代品，可替代 Google Analytics。</p></blockquote><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ul><li><p>一个<a href="https://github.com/">GitHub</a>账号</p></li><li><p>一个<a href="https://vercel.com/">Vercel</a>账号（可直接由GitHub登录）</p></li><li><p>一个<a href="https://app.supabase.io/">supabase</a>账号（可直接由GitHub登录）</p></li></ul><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>访问<a href="https://github.com/mikecao/umami">umami的代码仓库</a>，将其Fork至自己的账户中</p><p>登录<a href="https://app.supabase.io/">supabase</a>，单击<code>New Project</code>来新建一个数据库，根据提示设置数据库名称和密码</p><p><img src="https://i0.hdslb.com/bfs/album/61afd24107353687f780c389338ef46013037d1b.png"></p><p>进入刚刚新建的Project，点击左边的SQL Editor（命令图标）- New query来新建查询，并将<a href="https://github.com/mikecao/umami/blob/master/sql/schema.postgresql.sql">此处</a>的命令全部复制到框中，随后点击RUN，看见Success即可</p><p><img src="https://i0.hdslb.com/bfs/album/92c485b86ef9fd70989be6526d5553055f37778b.png"></p><p>然后打开<a href="https://vercel.com/">Vercel</a>，登录，点击<code>New Project</code>，在左侧选中Fork的项目，点击Environment Variables来设置环境变量：</p><p><img src="https://i0.hdslb.com/bfs/album/014d6163604a1448ac1c845deb50d144abc49154.png"></p><p><code>DATABASE_URL</code>: <code>postgresql://postgres:[YOUR-PASSWORD]@[Your-URI]:5432/postgres</code>（在supabase project-左侧设置-Database-Connection string-URI获得）</p><p><code>HASH_SALT</code>: 随机英文字符串（滚键盘）</p><p>然后点击部署，部署完成后会给一个域名，点击即可进入</p><p>用户名：admin</p><p>默认密码：umami</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i0.hdslb.com/bfs/album/b417c98fd5236e1ad605ad1ac14e6ba8bc5ce62b.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; </summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Vercel" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/Vercel/"/>
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Vercel" scheme="https://www.lemonawa.xyz/tags/Vercel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub Student Developer Pack 的申请教程</title>
+    <link href="https://www.lemonawa.xyz/2022/03/26/github-student-pack/"/>
+    <id>https://www.lemonawa.xyz/2022/03/26/github-student-pack/</id>
+    <published>2022-03-25T16:34:56.000Z</published>
+    <updated>2022-04-04T18:15:25.656Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><blockquote><p>Learn to ship software like a pro. There’s no substitute for hands-on experience. But for most students, real world tools can be cost-prohibitive. That’s why we created the GitHub Student Developer Pack with some of our partners and friends.</p></blockquote><p>其实也就是Github提供给学生的福利啦  </p><h3 id="申请要求"><a href="#申请要求" class="headerlink" title="申请要求"></a>申请要求</h3><ul><li><p>目前就读于授予学位或文凭的学习课程，例如高中、中学、学院、大学、家庭学校或类似的教育机构。</p></li><li><p>拥有一个可验证的学校颁发的电子邮件地址或上传证明您当前学生身份的文件。</p></li><li><p>拥有 GitHub 用户帐户。</p></li><li><p>至少 13 岁。</p><h3 id="避坑点"><a href="#避坑点" class="headerlink" title="避坑点"></a>避坑点</h3></li><li><p>建议使用学生证之类的<strong>实体证件</strong>，邮箱大多被BAN</p></li><li><p>提交的文件要求有<strong>有效期</strong>，有毕业年月就好，没有也可以自己P一个上去</p></li><li><p>如果自己在学校附近就<strong>不要使用代理服务器&#x2F;VPN等</strong>，Github会识别IP地址所在城市与学校位置</p><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3></li><li><p>打开 <a href="https://education.github.com/discount_requests/student_application">https://education.github.com/discount_requests/student_application</a></p></li><li><p>填写&#x2F;上传个人及学校信息</p></li><li><p>等10天<br>如果幸运的话，就会像我一样收到这样的邮件：<br><img src="https://i0.hdslb.com/bfs/album/6ed746ed0ec686f541018551b6b03d5a7a5ee842.png"><br>否则就要再次申请</p><h3 id="全部福利"><a href="#全部福利" class="headerlink" title="全部福利"></a>全部福利</h3><p><a href="https://education.github.com/pack">https://education.github.com/pack</a><br>都在这了，自己看吧</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Learn to ship software like a pro. There’s no substitute </summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Github" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/Github/"/>
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Github" scheme="https://www.lemonawa.xyz/tags/Github/"/>
+    
+    <category term="Pack" scheme="https://www.lemonawa.xyz/tags/Pack/"/>
+    
+    <category term="羊毛" scheme="https://www.lemonawa.xyz/tags/%E7%BE%8A%E6%AF%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何在浏览器中保护自己的隐私？</title>
+    <link href="https://www.lemonawa.xyz/2022/03/23/private-browser/"/>
+    <id>https://www.lemonawa.xyz/2022/03/23/private-browser/</id>
+    <published>2022-03-23T15:32:05.000Z</published>
+    <updated>2022-04-04T17:28:50.100Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>如今，越来越多的企业为了谋取自己的利益，大肆利用算法推荐，获取分析个人数据用于建造自己的商业帝国<br>保护隐私显得尤为重要。<br>本文将分享我的浏览器隐私保护策略，如有更好的可以向我提出</p><h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><p>我选择的是Brave.<br>开源、免费、Chromium内核、隐私保护到指纹<br><img src="https://i0.hdslb.com/bfs/album/cefaef6449c794b5b1d515b6ffb0ebb811d6a041.png"><br>下载地址：<a href="https://brave.com/">https://brave.com</a> (需掌握一定的上网技巧)或者 <a href="https://github.com/brave/brave-browser/releases">https://github.com/brave/brave-browser/releases</a></p><h3 id="浏览器插件"><a href="#浏览器插件" class="headerlink" title="浏览器插件"></a>浏览器插件</h3><ol><li>Brave 自带屏蔽<br>防广告垃圾，但是防指纹等还是不错的  </li><li>uBlock Origin<br>我一般将其拿来屏蔽广告和一些我不愿意看到的网站，建议搭配其他规则使用  </li><li>隐私獾<br>EFF开发，自动学习屏蔽追踪器，防指纹识别  </li><li>Random User-Agent<br>自动随机用户代理，不会造成不兼容问题  </li><li>Bitwarden<br>管理密码，我是按照源码自己搭建了一个</li></ol><ul><li>所有这些插件均可在谷歌应用商店下载，访问不顺的可以通过 <a href="https://www.crxsoso.com/">https://www.crxsoso.com/</a> 来安装</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;如今，越来越多的企业为了谋取自己的利益，大肆利用算法推荐，获取分析个人数据用于建造自己的商业帝国&lt;br&gt;保护隐私显得尤为重要。&lt;br&gt;本文将</summary>
+      
+    
+    
+    
+    
+    <category term="浏览器" scheme="https://www.lemonawa.xyz/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    <category term="隐私" scheme="https://www.lemonawa.xyz/tags/%E9%9A%90%E7%A7%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>各大厂商公共DNS大全【持续更新】</title>
+    <link href="https://www.lemonawa.xyz/2022/03/21/dns/"/>
+    <id>https://www.lemonawa.xyz/2022/03/21/dns/</id>
+    <published>2022-03-21T15:26:11.000Z</published>
+    <updated>2022-03-26T16:15:47.527Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>(摘抄自维基百科)</p><blockquote><p>域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。</p></blockquote><h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><p>此处仅展示<strong>广义上</strong>的概念，部分(如Cloudflare)有特殊解释的将会在后面说明<br>DoH: DNS over HTTPS (基于HTTPS的DNS)<br>DoT: DNS over TLS (基于TLS的DNS)<br>DNS64: 一种在不存在 AAAA 记录时从 A 记录合成 AAAA 记录的机制，用于支持纯IPv6网络</p><h3 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h3><h4 id="大陆"><a href="#大陆" class="headerlink" title="大陆"></a>大陆</h4><h5 id="Dnspod"><a href="#Dnspod" class="headerlink" title="Dnspod"></a>Dnspod</h5><p>Dnspod目前为腾讯所有，海内外的连通性都不错<br>IPv4: <code>119.29.29.29</code><br>IPv6: <code>2402:4e00::</code><br>DoH: <code>https://doh.pub/dns-query</code><br>DoH(IP): <code>https://1.12.12.12/dns-query</code>, <code>https://120.53.53.53/dns-query</code><br>DoH(国密SM2): <code>https://sm2.doh.pub/dns-query</code><br>DoT: <code>dot.pub</code><br>DoT(IP): <code>1.12.12.12</code>, <code>120.53.53.53</code>  </p><h5 id="Alidns"><a href="#Alidns" class="headerlink" title="Alidns"></a>Alidns</h5><p>阿里巴巴提供的DNS服务，国内连通性好，国外连通性差<br>IPv4: <code>223.5.5.5</code>, <code>223.6.6.6</code><br>IPv6: <code>2400:3200::1</code>, <code>2400:3200:baba::1</code><br>DoH: <code>https://dns.alidns.com/dns-query</code><br>DoT: <code>dns.alidns.com</code></p><h5 id="114DNS"><a href="#114DNS" class="headerlink" title="114DNS"></a>114DNS</h5><p>老牌，国外一般<br>IPv4: <code>114.114.114.114</code>, <code>114.114.115.115</code></p><h5 id="CNNIC-DNS"><a href="#CNNIC-DNS" class="headerlink" title="CNNIC DNS"></a>CNNIC DNS</h5><p>中国互联网信息中心提供，国外连通性差<br>IPv4: <code>1.2.4.8</code>, <code>210.2.4.8</code><br>IPv6: <code>2001:dc7:1000::1</code></p><h5 id="Baidu-DNS"><a href="#Baidu-DNS" class="headerlink" title="Baidu DNS"></a>Baidu DNS</h5><p>百度提供，海外一般<br>IPv4: <code>180.76.76.76</code><br>IPv6: <code>2400:da00::6666</code></p><h5 id="360-DNS"><a href="#360-DNS" class="headerlink" title="360 DNS"></a>360 DNS</h5><p>国内单节点<br>IPv4(电信+铁通+移动): <code>101.226.4.6</code>, <code>218.30.118.6</code><br>IPv4(联通): <code>123.125.81.6</code>, <code>140.207.198.6</code><br>DoH: <code>https://doh.360.cn</code><br>DoT: <code>dot.360.cn</code></p><h4 id="海外"><a href="#海外" class="headerlink" title="海外"></a>海外</h4><p><strong>此处列出的DoT服务大部分无法使用</strong></p><h5 id="Google-Public-DNS"><a href="#Google-Public-DNS" class="headerlink" title="Google Public DNS"></a>Google Public DNS</h5><p>老牌，国内连通性还可以，国外连通性极好<br>IPv4: <code>8.8.8.8</code>, <code>8.8.4.4</code><br>IPv6: <code>2001:4860:4860::8888</code>, <code>2001:4860:4860::8844</code><br>DoH: <code>https://dns.google/dns-query</code><br>DoT: <code>dns.google</code><br>DNS64: <code>2001:4860:4860::6464</code>, <code>2001:4860:4860::64</code><br>DoH(DNS64): <code>https://dns64.dns.google/dns-query</code><br>DoT(DNS64): <code>dns64.dns.google</code></p><h5 id="Cloudflare-1-1-1-1"><a href="#Cloudflare-1-1-1-1" class="headerlink" title="Cloudflare 1.1.1.1"></a>Cloudflare 1.1.1.1</h5><p>国外连通性天花板，大陆连通性一般，移动友好<br>IPv4: <code>1.1.1.1</code>, <code>1.0.0.1</code><br>IPv6: <code>2606:4700:4700::1111</code>, <code>2606:4700:4700::1001</code><br>DoH: <code>https://cloudflare-dns.com/dns-query</code><br>DoT: <code>1dot1dot1dot1.cloudflare-dns.com</code>, <code>one.one.one.one</code><br>DNS64: <code>2606:4700:4700::64</code>, <code>2606:4700:4700::6400</code>  </p><h5 id="Quad9-DNS"><a href="#Quad9-DNS" class="headerlink" title="Quad9 DNS"></a>Quad9 DNS</h5><p>IBM，国外不错<br>IPv4: <code>9.9.9.9</code>, <code>149.112.112.112</code><br>IPv6: <code>2620:fe::fe</code>, <code>2620:fe::9</code><br>DoH: <code>https://dns.quad9.net/dns-query</code><br>DoT: <code>dns.quad9.net</code>  </p><h5 id="OpenDNS"><a href="#OpenDNS" class="headerlink" title="OpenDNS"></a>OpenDNS</h5><p>Cisco提供，老牌，国外不错<br>IPv4: <code>208.67.222.222</code>, <code>208.67.220.220</code>, <code>208.67.222.220</code>, <code>208.67.220.222</code><br>IPv6: <code>2620:119:35::35</code>, <code>2620:119:53::53</code><br>DoH: <code>https://doh.opendns.com/dns-query</code>  </p><h5 id="Neustar-UltraDNS"><a href="#Neustar-UltraDNS" class="headerlink" title="Neustar UltraDNS"></a>Neustar UltraDNS</h5><p>Neustar提供，有国内节点，移动会被丢到国外<br>IPv4: <code>64.6.64.6</code>, <code>64.6.65.6</code><br>IPv6: <code>2620:74:1b::1:1</code>, <code>2620:74:1c::2:2</code>  </p><h3 id="More…"><a href="#More…" class="headerlink" title="More…"></a>More…</h3><p>有更多的DNS服务器推荐吗？<br>欢迎到 <a href="https://lemonawa.xyz/about">https://lemonawa.xyz/about</a> 页面中的<code>Contact me</code>联系我添加~</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;(摘抄自维基百科)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;域名系统（英语：Domain Name System，缩写：DNS）是互联网的一</summary>
+      
+    
+    
+    
+    
+    <category term="DNS" scheme="https://www.lemonawa.xyz/tags/DNS/"/>
+    
+    <category term="Cloudflare" scheme="https://www.lemonawa.xyz/tags/Cloudflare/"/>
+    
+    <category term="Dnspod" scheme="https://www.lemonawa.xyz/tags/Dnspod/"/>
+    
+    <category term="Tencent" scheme="https://www.lemonawa.xyz/tags/Tencent/"/>
+    
+    <category term="Aliyun" scheme="https://www.lemonawa.xyz/tags/Aliyun/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为Hexo添加RSS订阅页面和站点地图</title>
+    <link href="https://www.lemonawa.xyz/2022/03/21/sitemapandrss/"/>
+    <id>https://www.lemonawa.xyz/2022/03/21/sitemapandrss/</id>
+    <published>2022-03-20T17:17:52.000Z</published>
+    <updated>2022-04-04T18:17:19.885Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="RSS订阅插件安装"><a href="#RSS订阅插件安装" class="headerlink" title="RSS订阅插件安装"></a>RSS订阅插件安装</h3><p>打开hexo所在目录的命令行，输入以下命令安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure><p>如果你有安装<code>yarn</code>的话，建议使用<code>yarn</code>：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-feed</span><br></pre></td></tr></table></figure><p>然后在<code>_config.yml</code>中添加此项：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rss： /atom.xml</span><br></pre></td></tr></table></figure><p>最终RSS文件<code>atom.xml</code>会在<code>https://example.com/atom.xml</code>处生成</p><h3 id="站点地图插件安装"><a href="#站点地图插件安装" class="headerlink" title="站点地图插件安装"></a>站点地图插件安装</h3><p>打开hexo所在目录的命令行，输入以下命令安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><p>如果你有安装<code>yarn</code>的话，建议使用<code>yarn</code>：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-sitemap</span><br></pre></td></tr></table></figure><p>最终站点地图文件<code>sitemap.xml</code>会在<code>https://example.com/sitemap.xml</code>处生成</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;RSS订阅插件安装&quot;&gt;&lt;a href=&quot;#RSS订阅插件安装&quot; class=&quot;headerlink&quot; title=&quot;RSS订阅插件安装&quot;&gt;&lt;/a&gt;RSS订阅插件安装&lt;/h3&gt;&lt;p&gt;打开hexo所在目录的命令行，输入以下命令安装&lt;/p&gt;
+&lt;figure class=</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="RSS" scheme="https://www.lemonawa.xyz/tags/RSS/"/>
+    
+    <category term="Sitemap" scheme="https://www.lemonawa.xyz/tags/Sitemap/"/>
+    
+    <category term="站点地图" scheme="https://www.lemonawa.xyz/tags/%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windterm：用于DevOps的一个更快更好的SSH/Telnet/Serial/Shell/Sftp客户端.</title>
+    <link href="https://www.lemonawa.xyz/2022/03/21/windterm/"/>
+    <id>https://www.lemonawa.xyz/2022/03/21/windterm/</id>
+    <published>2022-03-20T16:33:42.000Z</published>
+    <updated>2022-04-04T18:15:15.605Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>用于DevOps的一个更快更好的SSH&#x2F;Telnet&#x2F;Serial&#x2F;Shell&#x2F;Sftp客户端<br>项目地址：<a href="https://github.com/kingToolbox/WindTerm">https://github.com/kingToolbox/WindTerm</a> (部分开源)<br>屏幕截图：(部分来源于原作者存储库处)<br><img src="https://i0.hdslb.com/bfs/album/c59d5f8f270a2fe3fbdd539cad5236817e1dc3b7.png"><br><img src="https://i0.hdslb.com/bfs/album/d552838bd18ecb633f6a90914f214f9e7f5458c4.png"><br><img src="https://i0.hdslb.com/bfs/album/baff806dc52276f98985385be5e5746e8236f1af.png">  </p><h3 id="特性-翻译自原作者存储库处"><a href="#特性-翻译自原作者存储库处" class="headerlink" title="特性(翻译自原作者存储库处)"></a>特性(翻译自原作者存储库处)</h3><h4 id="SSH-Telnet-Tcp-Shell-Serial"><a href="#SSH-Telnet-Tcp-Shell-Serial" class="headerlink" title="SSH, Telnet, Tcp, Shell, Serial"></a>SSH, Telnet, Tcp, Shell, Serial</h4><ul><li><p>实现了SSH v2、Telnet、Raw Tcp、Serial、Shell协议。<a href="https://kingtoolbox.github.io/2020/01/22/new-session/">介绍视频</a></p></li><li><p>支持SSH在会话认证时自动执行。</p></li><li><p>支持SSH ControlMaster。</p></li><li><p>支持SSH ProxyCommand或ProxyJump。<a href="https://kingtoolbox.github.io/2021/03/11/proxycommand/">介绍视频</a></p></li><li><p>支持SSH代理转发。<a href="https://kingtoolbox.github.io/2020/08/22/ssh_agent_forwarding/">介绍视频</a></p></li><li><p>支持SSH自动登录，包括密码、公钥、键盘交互式、gssapi-with-mic。<a href="https://kingtoolbox.github.io/2020/01/23/auto-login/">介绍视频</a></p></li><li><p>支持X11转发。<a href="https://kingtoolbox.github.io/2020/07/21/x11_forwarding/">介绍视频</a></p></li><li><p>支持直接&#x2F;本地端口转发，反向&#x2F;远程端口转发和动态端口转发。<a href="https://kingtoolbox.github.io/2020/07/21/port_forwarding/">介绍视频</a></p></li><li><p>支持XModem、YModem和ZModem。<a href="https://kingtoolbox.github.io/tags/modem/">介绍视频</a></p></li><li><p>集成sftp、scp客户端，支持下载、上传、删除、重命名、新建文件&#x2F;目录等。<a href="https://kingtoolbox.github.io/tags/transfer/">介绍视频</a></p></li><li><p>集成了本地文件管理器，支持移动到、复制到、复制自、删除、重命名、创建新文件&#x2F;目录等功能。</p></li><li><p>支持Windows Cmd、PowerShell和Cmd、PowerShell作为管理员。</p></li><li><p>支持Linux bash, zsh, powershell core等。</p></li><li><p>支持MacOS bash, zsh, powershell core等。</p><h4 id="GUI"><a href="#GUI" class="headerlink" title="GUI"></a>GUI</h4></li><li><p>**支持Windows、MacOS和Linux.**。</p></li><li><p>**支持多语言用户界面。</p></li><li><p>支持Unicode 13。</p></li><li><p>会话对话框和会话树。</p></li><li><p><strong>聚焦模式。</strong> <a href="https://kingtoolbox.github.io/2021/06/28/ui_focus_mode/">介绍视频</a></p></li><li><p><strong>同步输入。</strong> <a href="https://kingtoolbox.github.io/2021/05/27/sync-input/">介绍视频</a></p></li><li><p><strong>加强了对会话用户名和密码的保护。</strong> <a href="https://kingtoolbox.github.io/2021/03/11/protection-username-password/">介绍视频</a></p></li><li><p><strong>命令调色板.</strong> <a href="https://kingtoolbox.github.io/tags/command-palette/">介绍视频</a></p></li><li><p><strong>命令发送器.</strong> <a href="https://kingtoolbox.github.io/tags/sender/">介绍视频</a></p></li><li><p><strong>探索者窗格.</strong> <a href="https://kingtoolbox.github.io/2021/05/27/explorer/">介绍视频</a></p></li><li><p><strong>Shell Pane.</strong></p></li><li><p><strong>快速栏.</strong> <a href="https://kingtoolbox.github.io/2020/08/22/quickbar/">介绍视频</a></p></li><li><p><strong>粘贴对话框.</strong> <a href="https://kingtoolbox.github.io/2020/08/22/paste_dialog/">介绍视频</a></p></li><li><p><strong>本地和远程模式与vim键的绑定。(使用Shift+Enter键在远程和本地模式之间切换</strong>) <a href="https://kingtoolbox.github.io/2020/06/21/keyboard-modes/">介绍视频</a></p></li><li><p>支持时间戳、折叠、勾勒、分割视图。</p></li><li><p><strong>支持Linux和PowerShell中的powerline，例如Oh-My-Zsh，Oh-My-Posh。</strong> <a href="https://github.com/kingToolbox/WindTerm#screenshots">介绍图片</a></p></li><li><p>支持像vscode那样的颜色方案。<a href="https://kingtoolbox.github.io/2020/01/23/highlight/">介绍视频</a></p></li><li><p>支持搜索和预览。<a href="https://kingtoolbox.github.io/2020/01/22/search-and-mark/">介绍视频</a></p></li><li><p>支持突出显示开头和结尾的分隔符，如（）、[]、{}和自定义的分隔符。<a href="https://kingtoolbox.github.io/2020/06/28/pair/">介绍视频</a></p></li><li><p>支持改变用户界面主题。<a href="https://kingtoolbox.github.io/2020/09/18/theme/">介绍视频</a></p></li><li><p>支持设置标签的颜色。<a href="https://kingtoolbox.github.io/2020/09/18/tabbar-change-tabcolor/">介绍视频</a></p></li><li><p>支持搜索打开的标签。<a href="https://kingtoolbox.github.io/2021/03/11/tabbar-search-tab/">介绍视频</a></p></li><li><p>支持向右关闭标签。</p></li><li><p>支持设置窗口的透明度。<a href="https://kingtoolbox.github.io/2020/11/13/windows-opacity/">介绍视频</a></p></li><li><p>支持从选择到复制，从右键到粘贴或从中间键到粘贴。</p></li><li><p>支持用Google、Bing、Github、Stackoverflow、Wikipedia和DuckDuckGo在线搜索文本。<a href="https://kingtoolbox.github.io/2020/11/13/search-online/">介绍视频</a></p></li><li><p>支持打字时隐藏鼠标光标。</p></li><li><p><strong>支持锁定屏幕。</strong> <a href="https://kingtoolbox.github.io/2021/04/23/lock-screen/">介绍视频</a></p><h4 id="Term"><a href="#Term" class="headerlink" title="Term"></a>Term</h4></li><li><p>支持 vt100, vt220, vt340, vt420, vt520, xterm, xterm-256-colors.</p></li><li><p>支持unicode, emojis, true-color, mouse protocol等。</p></li><li><p>支持自动换行模式。<a href="https://kingtoolbox.github.io/2020/01/22/auto-wrap/">介绍视频</a></p></li><li><p>协议和术语可以自定义。</p></li><li><p>除Tektronix 4014外，所有vttest测试都已通过。</p><h4 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h4></li><li><p><strong>支持HTTP和SOCKS5代理。</strong> <a href="https://kingtoolbox.github.io/2021/03/11/proxy-http-socks5/">介绍视频</a></p></li><li><p><strong>支持跳跃服务器代理。</strong> <a href="https://kingtoolbox.github.io/2021/03/11/proxy-jump-server/">介绍视频</a></p></li><li><p>支持手动和自动会话记录。<a href="https://kingtoolbox.github.io/tags/logging/">介绍视频</a></p></li><li><p>重命名和复制会话。<a href="https://kingtoolbox.github.io/tags/tabbar/">介绍性视频</a></p></li><li><p>重新启动时恢复最后的会话和布局。<a href="https://kingtoolbox.github.io/2020/01/22/restore-sessions/">介绍视频</a></p></li><li><p>支持在启动时打开一个特定的会话或一组会话。</p><h4 id="Pefomance"><a href="#Pefomance" class="headerlink" title="Pefomance"></a>Pefomance</h4></li><li><p>高性能、低内存、低延时。<a href="https://kingtoolbox.github.io/2020/01/23/windterm-putty-performance/">介绍视频</a></p><h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p><a href="https://github.com/kingToolbox/WindTerm/releases">https://github.com/kingToolbox/WindTerm/releases</a><br>请自备翻译器</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;用于DevOps的一个更快更好的SSH&amp;#x2F;Telnet&amp;#x2F;Serial&amp;#x2F;Shell&amp;#x2F;Sftp客户端&lt;br</summary>
+      
+    
+    
+    
+    
+    <category term="终端" scheme="https://www.lemonawa.xyz/tags/%E7%BB%88%E7%AB%AF/"/>
+    
+    <category term="SSH" scheme="https://www.lemonawa.xyz/tags/SSH/"/>
+    
+    <category term="Sftp" scheme="https://www.lemonawa.xyz/tags/Sftp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>现已开放友链申请</title>
+    <link href="https://www.lemonawa.xyz/2022/03/21/links/"/>
+    <id>https://www.lemonawa.xyz/2022/03/21/links/</id>
+    <published>2022-03-20T16:07:34.000Z</published>
+    <updated>2022-03-26T16:18:15.614Z</updated>
+    
+    <content type="html"><![CDATA[<p>访问：<a href="https://lemonawa.xyz/links">https://lemonawa.xyz/links</a> 获取更多信息</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;访问：&lt;a href=&quot;https://lemonawa.xyz/links&quot;&gt;https://lemonawa.xyz/links&lt;/a&gt; 获取更多信息&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="友链" scheme="https://www.lemonawa.xyz/tags/%E5%8F%8B%E9%93%BE/"/>
+    
+    <category term="Links" scheme="https://www.lemonawa.xyz/tags/Links/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用GPG密钥验证Github的提交</title>
+    <link href="https://www.lemonawa.xyz/2022/03/20/gpg/"/>
+    <id>https://www.lemonawa.xyz/2022/03/20/gpg/</id>
+    <published>2022-03-20T15:00:29.000Z</published>
+    <updated>2022-04-04T18:15:34.013Z</updated>
+    
+    <content type="html"><![CDATA[<p>在Github浏览Commits时，我们应该经常可以看见一个绿色标记：Verified(已验证)<br><img src="https://i0.hdslb.com/bfs/album/1cf0577a84afcf4bc8ec5e98cb4c6cd65214663b.png"><br>那么，如何拥有这样的标记呢？</p><h3 id="GPG简介"><a href="#GPG简介" class="headerlink" title="GPG简介"></a>GPG简介</h3><p>（摘自维基百科）</p><blockquote><p>GNU Privacy Guard（GnuPG或GPG）是一个密码学软件，用于加密、签名通信内容及管理非对称密码学的密钥。GnuPG是自由软件，遵循IETF订定的OpenPGP技术标准设计，并与PGP保持兼容。</p></blockquote><p>简单的说，就是用于加密的密钥。<br>众所周知，Git的提交只需要自己的邮箱和密码，这就出现了一个漏洞：<br>只要他人有你的用户名和邮箱，就可以进行提交，就可以更改你的仓库内容。<br>一个典型的案例：<a href="https://spencerwoo.com/blog/wait-this-is-not-my-commit">https://spencerwoo.com/blog/wait-this-is-not-my-commit</a></p><h3 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h3><ol><li>电脑上安装好Git<br>没有安装的可以在此处下载：<a href="https://repo.huaweicloud.com/git-for-windows/">https://repo.huaweicloud.com/git-for-windows/</a></li><li>打开Git Bash，输入<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gpg --full-generate-key</span><br></pre></td></tr></table></figure>在第一处，选择RSA<br>在第二处，选择4096bits<br>在第三处，选择过期时间，回车为永不过期<br>在用户ID处，填写自己的Github用户名<br>在签名邮箱处，填写Github上绑定的邮箱<br>最后，为密钥设置一个密码，也可以不设置，如果设置了则一定要记住这个密码<br>这样，就成功生成了一对GPG密钥  </li><li>运行<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gpg --list-secret-keys --keyid-format LONG</span><br></pre></td></tr></table></figure>来查看我们当前拥有的所有GPG密钥：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Lemonawa@Inspiron-3670 MINGW64 ~/hexo</span><br><span class="line">$ gpg --list-secret-keys --keyid-format LONG</span><br><span class="line">/c/Users/Lemonawa/.gnupg/pubring.kbx</span><br><span class="line">------------------------------------</span><br><span class="line">sec   rsa3072/FB8FA623E7013D41 2022-03-17 [SC]</span><br><span class="line">      0722D31772F81E20A945BDD0FB8FA623E7013D41</span><br><span class="line">uid                 [ultimate] Lemonawa &lt;lemonawa1209@gmail.com&gt;</span><br><span class="line">ssb   rsa3072/34F49A369E312009 2022-03-17 [E]</span><br></pre></td></tr></table></figure>其中，sec一行的<code>FB8FA623E7013D41</code>即为GPG私钥ID</li><li>运行<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.signingkey FB8FA623E7013D41(此处替换为你自己的私钥ID)</span><br><span class="line">$ git config --global commit.gpgsign true</span><br></pre></td></tr></table></figure>此后的每一次提交，Git都会用其进行签名</li><li>运行<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gpg --armor --export FB8FA623E7013D41</span><br></pre></td></tr></table></figure>来导出自己的GPG公钥，类似这样：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-----BEGIN PGP PUBLIC KEY BLOCK-----</span><br><span class="line">dasSJDsiiiaF......</span><br><span class="line">-----END PGP PUBLIC KEY BLOCK-----</span><br></pre></td></tr></table></figure>将这一段粘贴到<a href="https://github.com/settings/keys">https://github.com/settings/keys</a> 的GPG keys处，随后进行一次提交，即可看见自己的commit上有了Verified的绿色标签<h3 id="End"><a href="#End" class="headerlink" title="End."></a>End.</h3></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在Github浏览Commits时，我们应该经常可以看见一个绿色标记：Verified(已验证)&lt;br&gt;&lt;img src=&quot;https://i0.hdslb.com/bfs/album/1cf0577a84afcf4bc8ec5e98cb4c6cd65214663b.png</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Github" scheme="https://www.lemonawa.xyz/tags/Github/"/>
+    
+    <category term="密钥" scheme="https://www.lemonawa.xyz/tags/%E5%AF%86%E9%92%A5/"/>
+    
+    <category term="GPG" scheme="https://www.lemonawa.xyz/tags/GPG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Telegram 人形自走机器人 PagerMaid-Modify 安装教程</title>
+    <link href="https://www.lemonawa.xyz/2022/03/15/pgm/"/>
+    <id>https://www.lemonawa.xyz/2022/03/15/pgm/</id>
+    <published>2022-03-14T16:11:18.000Z</published>
+    <updated>2022-04-06T15:07:14.752Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在Telegram中，我们有时能看见聊天的人们做出一些神奇的操作：<br><img src="https://i0.hdslb.com/bfs/album/54c4917b1de5723fc05d1b57f39a5f40459cef51.png"><br>这种操作可以通过使用<code>PagerMaid-Modify</code>来实现  </p><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>（摘自官方repo）  </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Pagermaid 是一个用在 Telegram 的实用工具。  </span><br><span class="line">它通过响应账号通过其他客户端发出的命令来自动执行一系列任务。</span><br></pre></td></tr></table></figure><p>你需要一台位于海外的服务器来完成部署操作</p><h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><p>一、用SSH连接工具连接上你的服务器<br>二、运行以下命令：（本次以<code>Ubuntu 20.04 LTS</code>作为示范，其他系统可相应替换）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install git imagemagick libzbar-dev neofetch tesseract-ocr tesseract-ocr-eng tesseract-ocr-chi-sim redis-server python3-pip -y</span><br><span class="line">git clone https://gitlab.com/Xtao-Labs/pagermaid-modify.git pagermaid &amp;&amp; cd pagermaid</span><br><span class="line">pip3 install -r requirements.txt</span><br><span class="line">cp config.gen.yml config.yml</span><br></pre></td></tr></table></figure><p>三、访问<a href="https://my.telegram.org/apps">https://my.telegram.org/apps</a>，使用注册Telegram的手机号码登录<br>填写你的应用名称、URL等（可以随便填写），随后单击Create application创建应用<br>有时可能会出现错误提示，请换用美国节点重试<br>完成后复制<code>App api_id</code>和<code>App api_hash</code><br>四、使用<code>vi config.yml</code>命令编辑配置文件，将上面复制的<code>App api_id</code>和<code>App api_hash</code>粘贴进对应位置，注意引号<br>五、运行<code>python3 -m pagermaid</code>，根据提示依次输入手机号、验证码和二次验证密码<br>当看到<code>PagerMaid-Modify 已启动</code>字样时，在任何聊天输入<code>-help</code>测试运行状态<br>不出意外的话，你应该可以看见自己的<code>-help</code>已经被替换成命令列表了<br>此时按下<code>Ctrl+C</code>终止运行<br>六、运行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cat &lt;&lt;&#x27;TEXT&#x27; &gt; /etc/systemd/system/pagermaid.service</span><br><span class="line">[Unit]</span><br><span class="line">Description=PagerMaid-Modify telegram utility daemon</span><br><span class="line">After=network.target</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">WorkingDirectory=/root/pagermaid</span><br><span class="line">ExecStart=/usr/bin/python3 -m pagermaid</span><br><span class="line">Restart=always</span><br><span class="line">TEXT</span><br></pre></td></tr></table></figure><p>来设置守护进程  </p><blockquote><p><code>WorkingDirectory</code>请按自己实际环境配置，一般应为<code>/root/pagermaid</code>   </p></blockquote><p>此时运行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start pagermaid</span><br></pre></td></tr></table></figure><p>来启动程序，运行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status pagermaid</span><br></pre></td></tr></table></figure><p>来检查运行状态，检查完成按<code>q</code>退出界面<br>再运行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable pagermaid</span><br></pre></td></tr></table></figure><p>来设置为开机自启<br>现在，你可以在聊天中使用<code>-help</code>获取使用帮助了<br>安装过程结束</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;在Telegram中，我们有时能看见聊天的人们做出一些神奇的操作：&lt;br&gt;&lt;img src=&quot;https://i0.hdslb.com/bf</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="https://www.lemonawa.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Telegram" scheme="https://www.lemonawa.xyz/tags/Telegram/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用静态公共CDN评测</title>
+    <link href="https://www.lemonawa.xyz/2022/01/30/public-cdn/"/>
+    <id>https://www.lemonawa.xyz/2022/01/30/public-cdn/</id>
+    <published>2022-01-30T12:00:00.000Z</published>
+    <updated>2022-04-04T17:39:04.030Z</updated>
+    
+    <content type="html"><![CDATA[<p>静态公共CDN，几乎每一位站长都会使用，因为它不仅可以节省服务器的流量，同时还有助于提升访问速度。<br>本文将以内容、速度、宕机率来测评。</p><span id="more"></span><h1 id="1-Jsdelivr"><a href="#1-Jsdelivr" class="headerlink" title="1.Jsdelivr"></a>1.Jsdelivr</h1><p>推荐指数：⭐⭐⭐<br>官网：<a href="https://cdn.jsdelivr.net/">CDN加速站</a> <a href="https://www.jsdelivr.com/">主站</a><br>内容：NPM（无registry），Github，Wordpress<br>速度：国内慢，国外快到离谱（2021年12月20日，他们丢失了ICP许可证，如今走Cloudflare）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Unfortunately today jsDelivr unexpectedly lost its ICP license in China. </span><br><span class="line">As effect the Quantil CDN disabled our account.</span><br><span class="line">From now on all Chinese traffic will be served by &quot;near China&quot; locations </span><br><span class="line">provided by global CDN providers.</span><br></pre></td></tr></table></figure><p>IT狗测速如下：<br><img src="https://i0.hdslb.com/bfs/album/5331fb9acc1f451a5c7a98f5b3b54eb3c2b9242f.png"></p><h1 id="2-Cdnjs"><a href="#2-Cdnjs" class="headerlink" title="2.Cdnjs"></a>2.Cdnjs</h1><p>推荐指数：⭐⭐⭐<br>官网：<a href="https://cdnjs.cloudflare.com/">CDN加速站</a> <a href="https://cdnjs.com/">主站</a><br>内容：Cdnjs<br>速度：国内慢，国外快到离谱<br>测速：<br><img src="https://i0.hdslb.com/bfs/album/5331fb9acc1f451a5c7a98f5b3b54eb3c2b9242f.png"><br><del>同一张图，因为都走cloudflare</del></p><h1 id="3-Staticfile"><a href="#3-Staticfile" class="headerlink" title="3.Staticfile"></a>3.Staticfile</h1><p>推荐指数：⭐⭐⭐⭐⭐<br>官网：<a href="https://cdn.staticfile.org/">CDN加速站</a> <a href="https://staticfile.org/">主站</a><br>内容：Cdnjs+国内开发者贡献库<br>速度：快到离谱<br>测速：<br><img src="https://i0.hdslb.com/bfs/album/a5fd5fa61af3e4246ba99b90cea9dfd952c274af.png"></p><h1 id="4-Bootcdn"><a href="#4-Bootcdn" class="headerlink" title="4.Bootcdn"></a>4.Bootcdn</h1><p>推荐指数：⭐⭐<br>官网：<a href="https://cdn.bootcdn.net/">CDN加速站</a> <a href="https://bootcdn.cn/">主站</a><br>内容：Cdnjs+国内开发者贡献库<br>速度：国内快到离谱，海外慢（国内多节点）<br>测速：<br><img src="https://i0.hdslb.com/bfs/album/97fd70385bea1c50455e6dac1908819826642a37.png"></p><h1 id="5-75CDN"><a href="#5-75CDN" class="headerlink" title="5.75CDN"></a>5.75CDN</h1><p>推荐指数：⭐⭐⭐⭐<br>官网：<a href="https://lib.baomitu.com/">CDN加速站</a> <a href="https://cdn.baomitu.com/">主站</a><br>内容：Cdnjs<br>速度：快到离谱<br>测速：<br><img src="https://i0.hdslb.com/bfs/album/a5fd5fa61af3e4246ba99b90cea9dfd952c274af.png"></p><h1 id="等等，宕机率呢？"><a href="#等等，宕机率呢？" class="headerlink" title="等等，宕机率呢？"></a>等等，宕机率呢？</h1><p>除了Bootcdn，其他好像都不错<br>可以在<a href="https://uptime.lemonawa.xyz/">此处</a>自行查看</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;静态公共CDN，几乎每一位站长都会使用，因为它不仅可以节省服务器的流量，同时还有助于提升访问速度。&lt;br&gt;本文将以内容、速度、宕机率来测评。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="评测" scheme="https://www.lemonawa.xyz/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="评测" scheme="https://www.lemonawa.xyz/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+    <category term="CDN" scheme="https://www.lemonawa.xyz/tags/CDN/"/>
+    
+  </entry>
+  
+</feed>
